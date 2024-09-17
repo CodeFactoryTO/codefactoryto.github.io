@@ -1,0 +1,15 @@
+/**
+ * global.css
+ * author: CodeFactory 
+ * date: 2024-09-17
+ */
+html {
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
