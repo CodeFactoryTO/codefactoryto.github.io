@@ -18,76 +18,34 @@
 			<a class="navbar-brand" href="#">
 				<img src="./assets/img/logo-selmi-w.svg" width="300" height="78" alt="Logo del Gruppo Selmi: macchine per la lavorazione del cioccolato">
 			</a>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a class="nav-link" href="./#hero">Wrap 400 Plus</a></li>
-					<li class="nav-item"><a class="nav-link" href="./#gallery">Gallery</a></li>
-					<li class="nav-item"><a class="nav-link" href="./#scheda-tecnica">Scheda Tecnica</a></li>
-					<li class="nav-item"><a class="nav-link" href="./#FAQ">FAQ</a></li>
-				</ul>
-			</div>
-			<a class="btn btn-light text-dark ms-3 shadow-sm" href="#contattaci" id="navCTA">Contattaci</a>
-				
 			<button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active"><a class="nav-link" href="./#hero">WRAP 400 PLUS</a></li>
+					<li class="nav-item"><a class="nav-link" href="./#gallery">GALLERY</a></li>
+					<li class="nav-item"><a class="nav-link" href="./#scheda-tecnica">SCHEDA TECNICA</a></li>
+					<li class="nav-item"><a class="nav-link" href="./#FAQ">FAQ</a></li>
+					<li class="nav-item d-md-none"><a class="nav-link" href="./#contattaci">CONTATTACI</a></li>
+				</ul>
+			</div><!-- XXXVB: bootstrap class fixed-top -->
+			<a class="btn btn-light text-dark ms-3 shadow-sm" href="#contattaci" id="navCTA">CONTATTACI</a>
 		</nav>
 	
 		<!-- Main -->
 		<main>
-			<section id="hero">
-				<div class="container-fluid vh-100 px-4 py-5 d-flex align-items-center text-light">
- 					<div class="row flex-lg-row align-items-center g-5 py-5">
-						<div class="col-lg-6">
-							<h1 class="fw-bold mb-3 text-center">Wrap 400 Plus
-								<span class="d-block fs-3 mt-3 text-center">Macchina per il confezionamento con sistema flow pack</span>
-							</h1>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta molestiae laborum, ad aut nostrum earum iusto, libero explicabo qui recusandae repellat! Temporibus, quidem architecto quod fugit maxime dolore reiciendis veniam.</p>
-						</div>
-						<div class="col-10 col-sm-8 col-lg-6">
-							<img src="./assets/img/wrap-400-plus.png" class="d-block mx-auto img-fluid border border-primary" alt="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack" width="700" height="500" loading="lazy">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="gallery">
-				<div class="container-fluid vh-100 px-4 py-5 bg-warning">
-					<div class="row">
-						<div class="col-12">
-							<h2>Gallery</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="scheda-tecnica">
-				<div class="container-fluid vh-100 px-4 py-5 bg-danger">
-					<div class="row">
-						<div class="col-12">
-							<h2>Scheda Tecnica</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="FAQ">
-				<div class="container-fluid vh-100 px-4 py-5 bg-success">
-					<div class="row">
-						<div class="col-12">
-							<h2>FAQ</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="contattaci">
-				<div class="container-fluid vh-100 px-4 py-5 bg-secondary">
-					<div class="row">
-						<div class="col-12">
-							<h2>Contattaci</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-
+			<!--XXXVB: dev, elminare in produzione-->
+			<script>
+				const parts = ['hero', 'gallery', 'scheda-tecnica', 'faq', 'contattaci'];
+				parts.forEach(part => {
+					fetch('./parts/' + part + '.html')
+						.then(response => response.text())
+						.then(data => {
+							document.getElementsByTagName('main')[0].innerHTML += data;
+						});
+				});
+			</script>
 		</main>
 		
 		<!-- Footer -->
