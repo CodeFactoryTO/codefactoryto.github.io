@@ -1,0 +1,45 @@
+/**
+ * form.css
+ * author: CodeFactory (Speciale Gabriele)
+ * date: 2024-10-08
+ */
+
+fieldset {
+    width: 60%;
+}
+
+label {
+    font-size: 16.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* style assegnato a tutti gli input */
+.custom-input {
+    font-size: 16px;
+}
+
+
+::placeholder {
+    font-size: 14px;
+}
+
+
+select[id="inputCodiceNazione"] {
+    background-color: rgb(245, 244, 244);
+}
+
+
+p.counterChar {
+    font-size: 15px;
+}
+
+
+/* campi che verranno mostrati se l'utente clicca sul "bottone" (div) della prenotazione */
+
+div#buttonPrenotazione {
+    padding: 20px;
+}
+
+div.dontShow {
+    display: none;
+}
