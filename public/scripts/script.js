@@ -5,3 +5,14 @@
  *
  * 
  */
+
+/* constants */
+const body = document.querySelector('body');
+
+/* check scroll position */
+document.addEventListener('scroll', function() {
+    if (window.scrollY > 50)
+        body.classList.add('scrolled');
+    else
+        body.classList.remove('scrolled');
+});

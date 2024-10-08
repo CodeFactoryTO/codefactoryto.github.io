@@ -3,13 +3,90 @@
  * author: CodeFactory 
  * date: 2024-09-17
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+
 html {
 	box-sizing: border-box;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
+	font-family: inherit;
+}
+
+:root {
+	/* Colors */
+	--dark-bg: #232323;
+
+	/* Selmi Colors */
+	--selmi-red: #c44536;
+	--selmi-red-rgb: 196, 69, 54;
+	--selmi-blue: #466292;
+    --selmi-blue-100: #adbfde;
+    --selmi-blue-500: #304a78;
+    --selmi-blue-600: #2d3f5e;
+    --selmi-blue-700: #25344d;
+    --selmi-blue-700-rgb: 37, 52, 77; /*25344d*/
+
+	/* Bootstrap ovveride colors */
+	--bs-primary-rgb: var(--selmi-blue-700-rgb);
+	--bs-danger-rgb: var(--selmi-red-rgb);
+
+	/* Typography */
+	--primary-font: "Dosis", sans-serif;
+}
+
+body {
+	font-family: var(--primary-font);
+}
+
+/* header & nav */
+nav {
+	transition: all 0.3s ease-in-out;
+}
+body.scrolled nav {
+	background-color: var(--selmi-blue-700);
+}
+.navbar-brand img {
+	transition: all 0.3s ease-in-out;
+}
+body.scrolled .navbar-brand img {
+	height: 39px;
+	width: 150px;
+}
+
+/* main */
+
+main {
+	/*XXXVB*/min-height: 200vh;
+}
+
+/* section 1 */
+#hero .container-fluid {
+	background-color: var(--dark-bg);
+	padding-top: 100px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+	/* header & nav */
+	.navbar-brand img {
+		height: 39px;
+		width: 150px;
+	}
+	#navCTA {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	/* main */
+
 }
