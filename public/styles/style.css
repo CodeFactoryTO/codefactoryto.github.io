@@ -11,8 +11,6 @@ html {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
 *,
 *::before,
 *::after {
@@ -28,11 +26,11 @@ html {
 	--selmi-red: #c44536;
 	--selmi-red-rgb: 196, 69, 54;
 	--selmi-blue: #466292;
-    --selmi-blue-100: #adbfde;
-    --selmi-blue-500: #304a78;
-    --selmi-blue-600: #2d3f5e;
-    --selmi-blue-700: #25344d;
-    --selmi-blue-700-rgb: 37, 52, 77; /*25344d*/
+	--selmi-blue-100: #adbfde;
+	--selmi-blue-500: #304a78;
+	--selmi-blue-600: #2d3f5e;
+	--selmi-blue-700: #25344d;
+	--selmi-blue-700-rgb: 37, 52, 77; /*25344d*/
 
 	/* Bootstrap ovveride colors */
 	--bs-primary-rgb: var(--selmi-blue-700-rgb);
@@ -50,7 +48,8 @@ body {
 nav {
 	transition: all 0.3s ease-in-out;
 }
-body.scrolled nav, nav:has(div.show, div.collapsing) {
+body.scrolled nav,
+nav:has(div.show, div.collapsing) {
 	background-color: var(--selmi-blue-700);
 }
 .navbar-brand img {
@@ -67,18 +66,62 @@ body.scrolled .navbar-brand img {
 /* main */
 
 main {
-	/*XXXVB*/min-height: 200vh;
+	/*XXXVB*/
+	min-height: 200vh;
 }
 
-/* section 1 */
-#hero .container-fluid {
-	background-color: var(--dark-bg);
-	padding-top: 100px;
+/* section Hero */
+#hero::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 1;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0,0,0,0.25);
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+#hero.videoPlaying::after {
+	opacity: 0;
+}
+#hero-play-button {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease-in-out;
+}
+#hero.videoPlaying #hero-play-button {
+	opacity: 0.25;
+}
+#hero-play-button i {
+	font-size: 10rem;
+}
+#hero-text {
+	transition: all 0.3s ease-in-out;
+}
+#hero.videoPlaying #hero-text {
+	opacity: 0;
+}
+#hero-text * {
+	max-width: 400px;
+}
+#hero-more-info {
+	opacity: 0;
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease-in-out;
+}
+#hero.videoPlaying #hero-more-info {
+	opacity: 1;
+	bottom: 50px;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-
 	/* header & nav */
 	.navbar-brand img {
 		height: 39px;
@@ -94,9 +137,8 @@ main {
 	}
 
 	/* main */
-
 }
 
 .nav-link {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }

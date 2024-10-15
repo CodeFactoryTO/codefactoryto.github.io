@@ -6,6 +6,11 @@
  * 
  */
 
+/* XXXVB: dev, questo wrapper va eliminato in fase di produzione, 
+ * dopo aver cancellato lo script di loading delle sezioni in index.html
+ */
+function initScripts() {
+    
 /* constants */
 const body = document.querySelector('body');
 
@@ -17,9 +22,18 @@ document.addEventListener('scroll', function () {
         body.classList.remove('scrolled');
 });
 
+/* Section HERO */
+const heroSection = document.querySelector('#hero');
+const playPause = heroSection.querySelector('#hero-play-button');
+const videoHero = heroSection.querySelector('#hero-video');
+playPause.addEventListener('click', function () {
+    videoHero.paused ? videoHero.play() : videoHero.pause();
+    ['bi-play-fill', 'bi-pause-fill'].map(cls => playPause.querySelector('i').classList.toggle(cls));
+    heroSection.classList.toggle('videoPlaying');
+});
 
 
-
+/* XXXVB: lo script da qui in poi genera errori, va rivisto
 
 
 // ! SCRIPTS PER IL FORM DI CONTATTO + PRENOTAZIONE -------------------------------------------------------------------
@@ -121,3 +135,8 @@ buttonPrenotazione.addEventListener("click", () => {
 // function onSubmit(token) {
 //     document.getElementById("demo-form").submit();
 // }
+
+/* XXXVB: fine blocco con errori */
+
+/* END initScripts */
+}
