@@ -1,17 +1,17 @@
 {
-    "meccaniche": {
+    "Caratteristiche_meccaniche": {
         "dimensioni_ingombro": "2500x720x1800 mm",
         "peso_vuoto": "450 kg",
         "materiale_contatto_alimenti": "inox AISI 304 L",
         "numero_ruote_pivottanti": 4
     },
-    "refrigerante": {
+    "Caratteristiche_refrigerante": {
         "gruppo_refrigerante": "900 Fr/h",
         "gas_refrigerante": "R134A",
         "quantita_gas_refrigerante": "500 g",
         "liquido_refrigerante": "1,5 l"
     },
-    "elettriche": {
+    "Caratteristiche_elettriche": {
         "potenza_totale_installata": "2 kW",
         "tensione_alimentazione": "220 VAC",
         "numero_fasi": 1,
@@ -31,7 +31,7 @@
         "servizi_assistenza": "Supporto Tecnico, Manutenzione Programmata, Interventi in Loco",
         "garanzia": "12 mesi"
     },
-    "pneumatico": {
+    "Caratteristiche_pneumatiche": {
         "pressione_esercizio_minimo": "6 bar",
         "portata_minima": "100 l/min",
         "caratteristiche_aria": "filtrata, secca e disoleata"

@@ -67,6 +67,9 @@ body.scrolled .navbar-brand img {
 .nav-link {
 	text-transform: uppercase;
 }
+#navCTA i {
+	display: none;
+}
 
 /* adjust the scroll margin for all sections, for inpage navigation */
 section {
@@ -141,33 +144,25 @@ section {
 }
 
 #carouselGallery .carousel-control-prev {
-	transform: translateX(-100%);
+	transform: translateX(-90%);
 }
 #carouselGallery .carousel-control-next {
-	transform: translateX(100%);
+	transform: translateX(90%);
 }
 
 /**************************
  * section Scheda Tecnica *
  **************************/
-/*
+
 #specs-tables {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	gap: 2rem;
-}
-*/
-
-#specs-tables {
-    display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
 }
 
 #specs-tables table {
     border: 1px solid var(--selmi-blue-100);
 	border-radius: 10px;
-	flex: 1 1 350px;
 }
 
 #specs-tables th, #specs-tables td {
@@ -233,7 +228,20 @@ div.dontShow {
 	#navCTA {
 		position: fixed;
 		bottom: 10px;
+		right: 65px;
+	}
+	#navCTA i {
+		display: inline-block;
+	}
+	
+	#callNow {
+		position: fixed;
+		bottom: 10px;
 		right: 10px;
+	}
+	#navCTA, #callNow {
+		z-index: 1000;
+		box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
 	}
 
 	/* main */

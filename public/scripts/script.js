@@ -65,7 +65,27 @@ function populateTable(data) {
         });
         fragment.appendChild(table);
     });
+    /* Download PDF */
+    const donwloadContainer = document.createElement("div");
+    donwloadContainer.classList.add("d-flex", "justify-content-center", "align-items-center");
+    
+    const downloadButton = document.createElement("a");
+    downloadButton.href = "./assets/docs/scheda-tecnica.pdf";
+    downloadButton.classList.add("btn", "btn-danger", "rounded-pill", "fw-bold", "btn-lg");
+    
+    const downloadText = document.createElement("span");
+    downloadText.textContent = " DOWNLOAD PDF";
+
+    const icon = document.createElement("i");
+    icon.classList.add("bi", "bi-file-earmark-pdf-fill");
+
+    downloadButton.appendChild(icon);
+    downloadButton.appendChild(downloadText);
+    downloadButton.setAttribute("target", "_blank");
+    donwloadContainer.appendChild(downloadButton);
+    fragment.appendChild(donwloadContainer);
     specsTables.appendChild(fragment);
+
 }
 
 // Funzione per caricare il file JSON
