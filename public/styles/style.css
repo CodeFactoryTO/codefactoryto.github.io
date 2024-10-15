@@ -150,6 +150,26 @@ section {
 	transform: translateX(90%);
 }
 
+/*****************
+ * section Video *
+ *****************/
+
+.video-container {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.video-element {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: contain;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+}
+
+
 /**************************
  * section Scheda Tecnica *
  **************************/
