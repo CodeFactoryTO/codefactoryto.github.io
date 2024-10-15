@@ -18,7 +18,7 @@ html {
 	font-family: inherit;
 }
 
-:root {
+body {
 	/* Colors */
 	--dark-bg: #232323;
 
@@ -27,6 +27,7 @@ html {
 	--selmi-red-rgb: 196, 69, 54;
 	--selmi-blue: #466292;
 	--selmi-blue-100: #adbfde;
+	--selmi-blue-100-rgb: 173, 191, 222;
 	--selmi-blue-500: #304a78;
 	--selmi-blue-600: #2d3f5e;
 	--selmi-blue-700: #25344d;
@@ -34,6 +35,7 @@ html {
 
 	/* Bootstrap ovveride colors */
 	--bs-primary-rgb: var(--selmi-blue-700-rgb);
+	--bs-secondary-rgb: var(--selmi-blue-100-rgb);
 	--bs-danger-rgb: var(--selmi-red-rgb);
 
 	/* Typography */
@@ -62,15 +64,21 @@ body.scrolled .navbar-brand img {
 .navbar-toggler:focus {
 	box-shadow: none;
 }
+.nav-link {
+	text-transform: uppercase;
+}
+
+/* adjust the scroll margin for all sections, for inpage navigation */
+section {
+	scroll-margin-block-start: 65px;
+}
 
 /* main */
 
-main {
-	/*XXXVB*/
-	min-height: 200vh;
-}
+/****************
+ * section Hero *
+ ****************/
 
-/* section Hero */
 #hero::after {
 	content: "";
 	position: absolute;
@@ -120,6 +128,79 @@ main {
 	bottom: 50px;
 }
 
+/**************************
+ * section Scheda Tecnica *
+ **************************/
+/*
+#specs-tables {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 2rem;
+}
+*/
+
+#specs-tables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#specs-tables table {
+    border: 1px solid var(--selmi-blue-100);
+	border-radius: 10px;
+	flex: 1 1 350px;
+}
+
+#specs-tables th, #specs-tables td {
+	padding: 0.5rem;
+}
+
+#specs-tables .table-primary {
+	background-color: var(--selmi-blue-100);
+	text-align: center;
+}
+#specs-tables .table-key {
+    background-color: var(--bs-gray-200);
+    color: var(--selmi-blue-700);
+	text-align: right;
+	width: 60%;
+}
+
+/**********************
+ * section Contattaci *
+ **********************/
+
+label {
+    font-size: 16.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.custom-input {
+    font-size: 16px;
+}
+
+textarea.custom-input {
+    height: 133px !important;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+select[id="inputCodiceNazione"] {
+    background-color: rgb(245, 244, 244);
+}
+
+p.counterChar {
+    font-size: 15px;
+}
+
+/* campi che verranno mostrati se l'utente clicca sul "bottone" (div) della prenotazione */
+
+div.dontShow {
+    display: none;
+}
+
 /* Mobile */
 @media (max-width: 767px) {
 	/* header & nav */
@@ -137,8 +218,4 @@ main {
 	}
 
 	/* main */
-}
-
-.nav-link {
-	text-transform: uppercase;
 }

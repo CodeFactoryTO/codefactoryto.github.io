@@ -1,40 +1,40 @@
 {
     "meccaniche": {
-      "dimensioni_ingombro": "2500x720x1800 mm",
-      "peso_vuoto": "450 kg",
-      "materiale_contatto_alimenti": "inox AISI 304 L",
-      "numero_ruote_pivottanti": 4
+        "dimensioni_ingombro": "2500x720x1800 mm",
+        "peso_vuoto": "450 kg",
+        "materiale_contatto_alimenti": "inox AISI 304 L",
+        "numero_ruote_pivottanti": 4
     },
     "refrigerante": {
-      "gruppo_refrigerante": "900 Fr/h",
-      "gas_refrigerante": "R134A",
-      "quantita_gas_refrigerante": "500 g",
-      "liquido_refrigerante": "1,5 l"
+        "gruppo_refrigerante": "900 Fr/h",
+        "gas_refrigerante": "R134A",
+        "quantita_gas_refrigerante": "500 g",
+        "liquido_refrigerante": "1,5 l"
     },
     "elettriche": {
-      "potenza_totale_installata": "2 kW",
-      "tensione_alimentazione": "220 VAC",
-      "numero_fasi": 1,
-      "frequenza": "50 / 60 Hz",
-      "tensione_ausiliari": "+24 Vdc",
-      "grado_protezione_involucro": "IP65",
-      "collegamento_spina_industriale": "16A - 3 poli"
-    },
-    "pneumatico": {
-      "pressione_esercizio_minimo": "6 bar",
-      "portata_minima": "100 l/min",
-      "caratteristiche_aria": "filtrata, secca e disoleata"
+        "potenza_totale_installata": "2 kW",
+        "tensione_alimentazione": "220 VAC",
+        "numero_fasi": 1,
+        "frequenza": "50 / 60 Hz",
+        "tensione_ausiliari": "+24 Vdc",
+        "grado_protezione_involucro": "IP65",
+        "collegamento_spina_industriale": "16A - 3 poli"
     },
     "specifiche_produzione": {
-      "capacita_produttiva": "100 min",
-      "materiale_costruzione": "alluminio, inox, plastica tecnica",
-      "sistemi_controllo": "NO PRODUCT-NO BAG, 4.0-Industry",
-      "dimensioni_massime": {
-        "larghezza": "130 mm",
-        "altezza": "45 mm"
-      },
-      "servizi_assistenza": "Supporto Tecnico, Manutenzione Programmata, Interventi in Loco",
-      "garanzia": "12 mesi"
+        "capacita_produttiva": "100 min",
+        "materiale_costruzione": "alluminio, inox, plastica tecnica",
+        "sistemi_controllo": "NO PRODUCT-NO BAG, 4.0-Industry",
+        "dimensioni_massime": {
+            "larghezza": "130 mm",
+            "altezza": "45 mm"
+        },
+        "servizi_assistenza": "Supporto Tecnico, Manutenzione Programmata, Interventi in Loco",
+        "garanzia": "12 mesi"
+    },
+    "pneumatico": {
+        "pressione_esercizio_minimo": "6 bar",
+        "portata_minima": "100 l/min",
+        "caratteristiche_aria": "filtrata, secca e disoleata"
     }
   }
   
