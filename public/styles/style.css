@@ -128,6 +128,25 @@ section {
 	bottom: 50px;
 }
 
+/*******************
+ * section Gallery *
+ *******************/
+
+#carouselGallery .carousel-caption-below {
+	display: flex;
+	align-items: center;
+	min-height: 150px;
+
+    color:var(--selmi-blue-100);
+}
+
+#carouselGallery .carousel-control-prev {
+	transform: translateX(-100%);
+}
+#carouselGallery .carousel-control-next {
+	transform: translateX(100%);
+}
+
 /**************************
  * section Scheda Tecnica *
  **************************/
