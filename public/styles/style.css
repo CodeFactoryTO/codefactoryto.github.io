@@ -131,9 +131,32 @@ section {
 	bottom: 50px;
 }
 
+/*****************
+ * section Video *
+ *****************/
+
+ .video-container {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.video-element {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: contain;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+}
+
 /*******************
  * section Gallery *
  *******************/
+
+#gallery {
+	background-color: var(--bs-gray-700);
+}
 
 #carouselGallery .carousel-caption-below {
 	display: flex;
@@ -149,26 +172,6 @@ section {
 #carouselGallery .carousel-control-next {
 	transform: translateX(90%);
 }
-
-/*****************
- * section Video *
- *****************/
-
-.video-container {
-	display: flex;
-	justify-content: center;
-	align-items: start;
-	width: 70vw;
-	margin: 0 auto;
-}
-
-.video-element {
-	width: 100%;
-	aspect-ratio: 16/9;
-	object-fit: contain;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
-}
-
 
 /**************************
  * section Scheda Tecnica *
@@ -194,10 +197,18 @@ section {
 	text-align: center;
 }
 #specs-tables .table-key {
-    background-color: var(--bs-gray-200);
+    background-color: var(--bs-gray-400);
     color: var(--selmi-blue-700);
 	text-align: right;
 	width: 60%;
+}
+
+/***************
+ * section FAQ *
+ ***************/
+
+#FAQ{
+    background-color: var(--bs-gray-400);
 }
 
 /**********************
@@ -211,6 +222,7 @@ label {
 
 .custom-input {
     font-size: 16px;
+	border-color: var(--selmi-blue-100);
 }
 
 textarea.custom-input {
@@ -253,7 +265,10 @@ div.dontShow {
 	#navCTA i {
 		display: inline-block;
 	}
-	
+	#navCTA span {
+		display: none;
+	}
+
 	#callNow {
 		position: fixed;
 		bottom: 10px;
@@ -261,6 +276,9 @@ div.dontShow {
 	}
 	#navCTA, #callNow {
 		z-index: 1000;
+		height: 50px;
+		width: 50px;
+		font-size: 1.4rem;
 		box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
 	}
 

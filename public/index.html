@@ -13,6 +13,21 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<!-- custom css -->
 		<link rel="stylesheet" href="./styles/style.css" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
 	</head>
 
 	<body>
@@ -78,12 +93,15 @@
 							Your browser does not support the video tag.
 						</video>
 					</div>
+					<div class="col-12 col-md-6 text-center py-5 mx-auto text-light">
+						La nuova Wrap 400 Plus, che offre versatilità e personalizzazione con tecnologia avanzata come box motion, termosaldatura, e stampa integrata. Testa la macchina in azienda o invia un campione del tuo prodotto per una dimostrazione video. Ideale per chi desidera portare il proprio packaging a un livello superiore.
+					</div>
 				</div>
 			</section>
 
 			<!-- GALLERY -->
 			<section id="gallery">
-				<div class="container-fluid px-4 py-5 bg-dark d-flex justify-content-center align-items-center">
+				<div class="container-fluid px-4 py-5 d-flex justify-content-center align-items-center">
 					
 					<div id="carouselGallery" class="carousel slide col-10 col-lg-6 pb-5" data-bs-ride="carousel">
 
@@ -108,8 +126,10 @@
 			
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img src="https://picsum.photos/id/237/800/400" class="d-block w-100 img-fluid"
-									alt="Cioccolato caramello su rullo">
+								<picture>
+									<source srcset="./assets/img/gallery/1.webp" type="image/webp">
+									<img src="./assets/img/gallery/1.jpg" class="d-block w-100 img-fluid" alt="Cioccolato caramello su rullo">
+								</picture>
 								<div class="carousel-caption-below text-center">
 									<!-- <h5>Confezionamento di Cioccolato</h5> -->
 									<p>La nostra Wrap 400 Plus offre alta precisione, ideale per il confezionamento di prodotti
@@ -232,13 +252,13 @@
 
 			<!-- FAQ -->
 			<section id="FAQ">
-				<div class="container-fluid px-4 py-5 bg-white">
+				<div class="container-fluid px-4 py-5">
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
 								<h2 class="text-center mb-4">FAQ</h2>
 							</div>
-							<div class="accordion col-12 col-md-6 mx-auto my-5" id="faq">
+							<div class="accordion col-12 col-md-8 mx-auto my-5" id="faq">
 								<!--Prima domanda-->
 								<div class="accordion-item">
 									<h2 class="accordion-header" id="headingOne">
@@ -898,27 +918,45 @@
 		<!-- Footer -->
 		<footer class="bg-dark text-light py-4">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h5>Selmi Group</h5>
-						<p>Via Example, 123, 10100 Torino, Italia</p>
-					</div>
-					<div class="col-md-6 text-md-end">
-						<ul class="list-unstyled">
-							<li><a href="#" class="text-light">Privacy Policy</a></li>
-							<li><a href="#" class="text-light">Termini di Servizio</a></li>
-							<li><a href="#" class="text-light">Contattaci</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row mt-3">
-					<div class="col-12 text-center">
-						<p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
-					</div>
-				</div>
-			</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Selmi Group</h5>
+                        <p>Via Langhe 25, 12042 Pollenzo (CN)</p>
+                        <p>P.iva: 02668130046</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy Policy</a></li>
+                            <li><a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html" class="text-light">Linee di Produzione</a></li>
+                            <li><a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf" class="text-light">Informativa Trattamento Dati</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>I CONTATTI TELEFONICI</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Tel: +39 0172 479 273</a></li>
+                            <li><a href="#" class="text-light">Tel: +39 0172 479 275</a></li>
+                            <li><a href="#" class="text-light">Fax: +39 0172 477 814</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <h5> LE NOSTRE EMAIL</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">info@selmi-group.it</a></li>
+                            <li><a href="#" class="text-light">technicalservice@selmi-group.it</a></li>
+                            <li><a href="#" class="text-light">trainingcentre@selmi-group.it</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
+                    </div>
+                </div>
+            </div>
 		</footer>
-		
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<script src="./scripts/script.js"></script>
