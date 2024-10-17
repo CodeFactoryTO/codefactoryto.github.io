@@ -136,11 +136,13 @@ section {
  *****************/
 
  .video-container {
+	/*
 	display: flex;
 	justify-content: center;
 	align-items: start;
 	width: 70vw;
 	margin: 0 auto;
+	*/
 }
 
 .video-element {
