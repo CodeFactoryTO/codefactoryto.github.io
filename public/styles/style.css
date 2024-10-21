@@ -196,12 +196,12 @@ section {
 
 #carouselGallery .carousel-control-prev {
 	filter: invert(100%);
-	transform: translateX(-90%) translateY(-12%);
+	transform: translateX(-100%) translateY(-12%);
 }
 
 #carouselGallery .carousel-control-next {
 	filter: invert(100%);
-	transform: translateX(90%) translateY(-12%);
+	transform: translateX(100%) translateY(-12%);
 }
 
 /**************************
@@ -249,7 +249,6 @@ section {
 
 label {
 	font-size: 16.5px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .custom-input {
@@ -261,16 +260,13 @@ textarea.custom-input {
 	height: 133px !important;
 }
 
-::placeholder {
-	font-size: 14px;
-}
 
 select[id="inputCodiceNazione"] {
 	background-color: rgb(245, 244, 244);
 }
 
 p.counterChar {
-	font-size: 15px;
+	font-size: 14px;
 }
 
 /* campi che verranno mostrati se l'utente clicca sul "bottone" (div) della prenotazione */
@@ -278,6 +274,7 @@ p.counterChar {
 div.dontShow {
 	display: none;
 }
+
 
 /* Mobile */
 @media (max-width: 767px) {
