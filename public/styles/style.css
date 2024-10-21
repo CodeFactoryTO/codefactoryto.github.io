@@ -207,9 +207,6 @@ section {
 /**************************
  * section Scheda Tecnica *
  **************************/
-#scheda-tecnica {
-	background-color: white;
-}
 
 #specs-tables {
 	display: grid;
@@ -244,16 +241,11 @@ section {
  * section FAQ *
  ***************/
 
-#FAQ {
-	background-color: white;
-}
+
 
 /**********************
  * section Contattaci *
  **********************/
-#contattaci {
-	background-color: white;
-}
 
 label {
 	font-size: 16.5px;
