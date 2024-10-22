@@ -269,8 +269,8 @@ p.counterChar {
 	font-size: 14px;
 }
 
-/* campi che verranno mostrati se l'utente clicca sul "bottone" (div) della prenotazione */
-
+/* campi che verranno mostrati se l'utente clicca sul 
+"bottone" (div) della prenotazione */
 div.dontShow {
 	display: none;
 }
@@ -312,11 +312,25 @@ div.dontShow {
 	#navCTA,
 	#callNow {
 		z-index: 1000;
-		height: 50px;
-		width: 50px;
-		font-size: 1.4rem;
+		height: 45px;
+		width: 45px;
+		font-size: 1.3rem;
 		box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
 	}
 
-	/* main */
+	
+	/* scheda tecnica */
+	#specs-tables {
+		grid-template-columns: 1fr;
+	}
+
+	#specs-tables table {
+		width: 100%;
+	}
+
+
+	/* contatti */
+	label {
+		font-size: 15px;
+	}
 }
