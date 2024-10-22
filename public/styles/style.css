@@ -184,8 +184,9 @@ section {
 #carouselGallery picture img {
 	width: 100%;
 	height: 500px;
-	/* se vanno oltre Xpx, verranno ritagliate mantenendo tutte le immagini sullo stesso livello */
-	object-fit: cover;
+	/* se vanno oltre Xpx, verranno ritagliate mantenendo tutte le immagini sullo stesso livello
+	e contenute quando la viewport verrà ristretta molto */
+	object-fit: contain;
 }
 
 #carouselGallery .carousel-caption-below {
@@ -325,7 +326,15 @@ div.dontShow {
 		height: 350px;
 	}
 
-	
+	#carouselGallery .carousel-control-prev {
+		transform: translateX(-100%) translateY(-20%);
+	}
+
+	#carouselGallery .carousel-control-next {
+		transform: translateX(100%) translateY(-20%);
+	}
+
+
 	/* scheda tecnica */
 	#specs-tables {
 		grid-template-columns: 1fr;
