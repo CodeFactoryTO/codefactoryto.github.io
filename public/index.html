@@ -4,9 +4,127 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- 
+	 @type: Product    per la descrizione del nostro prodotto (name, image, description)
+
+	 - specifiche tecniche -> una serie di oggetti che specificano le caratteristiche del prodotto (peso, altezza, materiali...)
+
+	 - brand -> per descrivere l'azienda che produce il prodotto trattato
+	 	- organization -> descrivere l'azienda o l'organizzazione dietro un sito web o un prodotto
+	 	- contact point -> per fornire dettagli sui punti di contatto per l'azienda o l'organizzazione
+	 	- address -> per fornire dettagli sull'indirizzo fisico di un'organizzazione
+	 		- geo coordinates -> le coordinate geografiche del luogo specifico di dove viene svolta l'attività
+	 		- has map -> link della mappa con la posizione dell'attività
+	 - offers -> 
+	 - offers -> usato per descrivere le offerte commerciali relative a un prodotto 
+	 -->
 	<script type="application/ld+json">
-			{//XXX TODO: Add JSON-LD}
-		</script>
+		{
+			"@context": "https://schema.org",
+			"@type": "Product",
+			"name": "Wrap 400 Plus",
+			"image": "https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg",
+			"category": "Macchinari per il confezionamento alimentare",
+			"description": "Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.",
+			
+			"weight": {
+			  "@type": "QuantitativeValue",
+			  "minValue": "500",
+			  "maxValue": "700",
+			  "unitText": "kg"
+			},
+			"material": [
+			  "Alluminio",
+			  "Acciaio Inox",
+			  "Plastica Tecnica"
+			],
+			"height": {
+			  "@type": "QuantitativeValue",
+			  "value": "1.8",
+			  "unitText": "m"
+			},
+			"width": {
+			  "@type": "QuantitativeValue",
+			  "value": "0.72",
+			  "unitText": "m"
+			},
+			"depth": {
+			  "@type": "QuantitativeValue",
+			  "value": "2.5",
+			  "unitText": "m"
+			},
+		  
+			"brand": {
+			  "@type": "Organization",
+			  "name": "Selmi Group",
+			  "logo": "https://www.selmi-group.it/img/logo-selmi-w.svg",
+			  "url": "https://www.selmi-group.it",
+			  "contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+39 0172 479 273",
+				"contactType": "Customer Service",
+				"areaServed": "IT",
+				"availableLanguage": "Italian"
+			  },
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Via Langhe 25",
+				"addressLocality": "Pollenzo",
+				"addressRegion": "Cuneo",
+				"postalCode": "12042",
+				"addressCountry": "Italy",
+				"geo": {
+				  "@type": "GeoCoordinates",
+				  "latitude": "44.6940727",
+				  "longitude": "7.9033824"
+				},
+				"hasMap": "https://www.google.com/maps/place/Selmi+Srl/@44.693904,7.9033824,17.5z/data=!4m6!3m5!1s0x12d2b297a5290c0f:0x9147fdc41d8203d5!8m2!3d44.6940689!4d7.9059996!16s%2Fg%2F1hc47k8qr?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D"
+			  },
+			  
+			  "offers": {
+				"@type": "Offer",
+				"priceCurrency": "EUR",
+				"price": "Richiedi un preventivo",
+				"availability": "https://schema.org/InStock",
+				"url": "https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html"
+			  }
+			}
+		  }				  
+	</script>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+			  {
+				"@type": "Question",
+				"name": "Come posso testare il funzionamento della Wrap 400 Plus per il mio prodotto?",
+				"acceptedAnswer": {
+				  "@type": "Answer",
+				  "text": "Puoi provare la macchina presso la nostra azienda o inviare un campione del tuo prodotto per un video dimostrativo."
+				}
+			  },
+			  {
+				"@type": "Question",
+				"name": "Quali tipi di prodotti possono essere confezionati con la Wrap 400 Plus?",
+				"acceptedAnswer": {
+				  "@type": "Answer",
+				  "text": "La Wrap 400 Plus è adatta a confezionare prodotti alimentari di varie forme e dimensioni, come praline e barrette di cioccolato."
+				}
+			  },
+			  {
+				"@type": "Question",
+				"name": "Quali sono le principali caratteristiche tecnologiche della Wrap 400 Plus?",
+				"acceptedAnswer": {
+				  "@type": "Answer",
+				  "text": "Include tecnologie come box motion, termosaldatura e una stampante personalizzata per garantire confezionamenti sicuri e personalizzati."
+				}
+			  }
+			]
+		  }
+	</script>
+
 	<title>Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack - Selmi Group</title>
 	<meta name="description"
 		content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.">
