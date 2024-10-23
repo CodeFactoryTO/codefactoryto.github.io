@@ -350,3 +350,6 @@ div.dontShow {
 		font-size: 15px;
 	}
 }
+iframe{
+	width: 100%;
+}
