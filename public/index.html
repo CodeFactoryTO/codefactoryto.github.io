@@ -82,10 +82,12 @@
 			  },
 			  
 			  "offers": {
-				"@type": "Offer",
-				"availability": "https://schema.org/InStock",
-				"url": "https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html"
-			  }
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "price": "1.00",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html"
+              }
 			}
 		}				  
 	</script>
@@ -1252,7 +1254,8 @@
 						</div>
 						<!--Mostra altre domande-->
 						<div class="col-12 d-flex justify-content-center align-items-center">
-							<button class="btn btn-outline-primary btn-lg" id="showMoreFAQ">Mostra altre domande</button>
+							<button class="btn btn-outline-primary btn-lg" id="showMoreFAQ">Mostra altre
+								domande</button>
 						</div>
 					</div>
 				</div>
@@ -1409,59 +1412,66 @@
 
 	<!-- Footer -->
 	<footer class="bg-dark text-light py-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<div>
-						<h3>SELMI GROUP</h3>
-						<p>Via Langhe 25, 12042 Pollenzo (CN)</p>
-						<p>P.iva: 02668130046</p>
-					</div>
-					<div>
-						<h3>I CONTATTI TELEFONICI</h3>
-						<ul class="list-unstyled">
-							<li><a href="tel:+390172479273" class="text-light">Tel: +39 0172 479 273</a></li>
-							<li><a href="tel:+390172479275" class="text-light">Tel: +39 0172 479 275</a></li>
-							<li><a href="tel:+390172477814" class="text-light">Fax: +39 0172 477 814</a></li>
-						</ul>
-					</div>
-				</div>
+		<div class="container-fluid d-flex justify-content-between align-items-start flex-wrap px-5">
 
-				<div class="col-4 text-center">
-					<h3>CI TROVI QUI!</h3>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2159490244308!2d7.905320812196701!3d44.69478988454721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b297a5290c0f%3A0x9147fdc41d8203d5!2sSelmi%20Srl!5e0!3m2!1sit!2sit!4v1729584137080!5m2!1sit!2sit"
-						height="250" style="max-width: 350px; border:0;" allowfullscreen="" loading="lazy"></iframe>
-				</div>
+			<!-- Colonna 1: Google Maps -->
+			<div class="footer-col map-col text-center me-auto">
+				<h5>CI TROVI QUI !</h5>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2159490244308!2d7.905320812196701!3d44.69478988454721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b297a5290c0f%3A0x9147fdc41d8203d5!2sSelmi%20Srl!5e0!3m2!1sit!2sit!4v1729584137080!5m2!1sit!2sit"
+					width="100%" height="250" style="width: 400px; border-radius:20px;" allowfullscreen=""
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 
-				<div class="col-4 text-md-end">
-					<div>
-						<ul class="list-unstyled">
-							<li><a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy
-									Policy</a></li>
-							<li><a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html"
-									class="text-light">Linee di Produzione</a></li>
-							<li><a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf"
-									class="text-light">Informativa Trattamento Dati</a></li>
-						</ul>
-					</div>
-					<div>
-						<h3>LE NOSTRE EMAIL</h3>
-						<ul class="list-unstyled">
-							<li><a href="mailto:info@selmi-group.it" class="text-light">info@selmi-group.it</a></li>
-							<li><a href="mailto:technicalservice@selmi-group.it"
-									class="text-light">technicalservice@selmi-group.it</a></li>
-							<li><a href="mailto:trainingcentre@selmi-group.it"
-									class="text-light">trainingcentre@selmi-group.it</a></li>
-						</ul>
-					</div>
+			<!-- Colonna 2: Contatti telefonici -->
+			<div class="footer-col">
+				<h5>Selmi Group</h5>
+				<p>Via Langhe 25, 12042 Pollenzo (CN)</p>
+				<p>P.iva: 02668130046</p>
+				<h5>I CONTATTI TELEFONICI</h5>
+				<ul class="list-unstyled">
+					<li><a href="#" class="text-light">Tel: +39 0172 479 273</a></li>
+					<li><a href="#" class="text-light">Tel: +39 0172 479 275</a></li>
+					<li><a href="#" class="text-light">Fax: +39 0172 477 814</a></li>
+				</ul>
+			</div>
+
+			<!-- Colonna 3: Privacy Policy, Email e Social Media -->
+			<div class="footer-col text-md-end ms-auto">
+				<div>
+					<ul class="list-unstyled">
+						<li><a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy
+								Policy</a>
+						</li>
+						<li><a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html"
+								class="text-light">Linee di Produzione</a></li>
+						<li><a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf"
+								class="text-light">Informativa Trattamento Dati</a></li>
+					</ul>
+				</div>
+				<div>
+					<h5>LE NOSTRE EMAIL</h5>
+					<ul class="list-unstyled">
+						<li><a href="mailto:info@selmi-group.it" class="text-light">info@selmi-group.it</a></li>
+						<li><a href="mailto:technicalservice@selmi-group.it"
+								class="text-light">technicalservice@selmi-group.it</a></li>
+						<li><a href="mailto:trainingcentre@selmi-group.it"
+								class="text-light">trainingcentre@selmi-group.it</a></li>
+					</ul>
+				</div>
+				<div class="social-media mt-5">
+					<ul class="list-unstyled d-flex gap-5">
+						<li><a href="#" class="text-light"><i class="bi bi-facebook h3"></i></a></li>
+						<li><a href="#" class="text-light"><i class="bi bi-instagram h3"></i></a></li>
+						<li><a href="#" class="text-light"><i class="bi bi-youtube h3"></i></a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="row mt-3">
-				<div class="col-12 text-center">
-					<p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
-				</div>
-			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="text-center mt-5">
+			<p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
 		</div>
 	</footer>
 	<!-- Bootstrap JS -->
