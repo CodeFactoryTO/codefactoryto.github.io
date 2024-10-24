@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 
 	 @type: Product    per la descrizione del nostro prodotto (name, image, description)
 
 	 - specifiche tecniche -> una serie di oggetti che specificano le caratteristiche del prodotto (peso, altezza, materiali...)
@@ -18,1055 +17,1101 @@
 	 - offers -> 
 	 - offers -> usato per descrivere le offerte commerciali relative a un prodotto 
 	 -->
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "Product",
-			"name": "Wrap 400 Plus",
-			"image": "https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg",
-			"category": "Macchinari per il confezionamento alimentare",
-			"description": "Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.",
-			
-			"weight": {
-			  "@type": "QuantitativeValue",
-			  "minValue": "500",
-			  "maxValue": "700",
-			  "unitText": "kg"
-			},
-			"material": [
-			  "Alluminio",
-			  "Acciaio Inox",
-			  "Plastica Tecnica"
-			],
-			"height": {
-			  "@type": "QuantitativeValue",
-			  "value": "1.8",
-			  "unitText": "m"
-			},
-			"width": {
-			  "@type": "QuantitativeValue",
-			  "value": "0.72",
-			  "unitText": "m"
-			},
-			"depth": {
-			  "@type": "QuantitativeValue",
-			  "value": "2.5",
-			  "unitText": "m"
-			},
-		  
-			"brand": {
-			  "@type": "Organization",
-			  "name": "Selmi Group",
-			  "logo": "https://www.selmi-group.it/img/logo-selmi-w.svg",
-			  "url": "https://www.selmi-group.it",
-			  "contactPoint": {
-				"@type": "ContactPoint",
-				"telephone": "+39 0172 479 273",
-				"contactType": "Customer Service",
-				"areaServed": "IT",
-				"availableLanguage": "Italian"
-			  },
-			  "address": {
-				"@type": "PostalAddress",
-				"streetAddress": "Via Langhe 25",
-				"addressLocality": "Pollenzo",
-				"addressRegion": "Cuneo",
-				"postalCode": "12042",
-				"addressCountry": "Italy",
-				"geo": {
-				  "@type": "GeoCoordinates",
-				  "latitude": "44.6940727",
-				  "longitude": "7.9033824"
-				},
-				"hasMap": "https://www.google.com/maps/place/Selmi+Srl/@44.693904,7.9033824,17.5z/data=!4m6!3m5!1s0x12d2b297a5290c0f:0x9147fdc41d8203d5!8m2!3d44.6940689!4d7.9059996!16s%2Fg%2F1hc47k8qr?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D"
-			  },
-			  
-			  "offers": {
-                "@type": "Offer",
-                "priceCurrency": "EUR",
-                "price": "1.00",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html"
-              }
-			}
-		}				  
-	</script>
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Wrap 400 Plus",
+        "image": "https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg",
+        "category": "Macchinari per il confezionamento alimentare",
+        "description": "Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.",
 
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "FAQPage",
-			"mainEntity": [
-			  {
-				"@type": "Question",
-				"name": "Come posso testare il funzionamento della Wrap 400 Plus per il mio prodotto?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Puoi provare la macchina per il confezionamento alimentare direttamente presso la nostra azienda, oppure inviaci un campione del tuo prodotto e riceverai un video che mostra il processo di confezionamento e il prodotto finale."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali tipi di prodotti possono essere confezionati con la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La Wrap 400 Plus è estremamente versatile e adatta a confezionare prodotti alimentari di varie forme e dimensioni, come praline, barrette di cioccolato e altri alimenti. Assicura confezionamenti personalizzati e sicuri."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali sono le principali caratteristiche tecnologiche della Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Include tecnologie come box motion, no product no bag, termosaldatura, raffreddamento integrato e una stampante personalizzata."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Come funziona la tecnologia 'no product no bag'?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Assicura che la macchina non crei una busta vuota se il prodotto non è presente, riducendo gli sprechi e ottimizzando il processo."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali vantaggi offre la tecnologia box motion della Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Garantisce un confezionamento preciso e rapido, soprattutto per prodotti alimentari delicati o di forme irregolari."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Posso personalizzare le confezioni con la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, grazie alla stampante integrata, permette di personalizzare le confezioni con loghi, testi o codici a barre."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "La Wrap 400 Plus è facile da usare per il confezionamento alimentare?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, è progettata per essere user-friendly, con funzionalità intuitive e automatizzate, che semplificano il processo di confezionamento."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Qual è la capacità produttiva oraria della Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La Wrap 400 Plus può confezionare tra le 60 e 120 confezioni al minuto."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali dimensioni massime di prodotto può gestire la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Può confezionare prodotti con una larghezza fino a 130 mm e un'altezza massima di 45 mm."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali materiali vengono utilizzati per l'imballaggio?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Supporta plastica, carta e alluminio, offrendo opzioni per imballaggi sostenibili e tradizionali."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali sono i sistemi di sicurezza integrati nella Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "È dotata di sensori di sicurezza avanzati, protezioni meccaniche e allarmi per garantire un funzionamento sicuro."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "La Wrap 400 Plus può stampare etichette o codici sulle confezioni?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, grazie alla stampante integrata, può stampare dati come date di scadenza, lotti di produzione, loghi e grafiche."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Qual è il consumo energetico della Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La potenza totale installata è di 2 kW, richiede un'alimentazione elettrica a 220 VAC."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Posso integrare la Wrap 400 Plus nella mia linea di produzione esistente?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, la Wrap 400 Plus può essere facilmente integrata in una linea di produzione esistente ed è compatibile con altre macchine."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quali sono le operazioni di manutenzione richieste per la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Le operazioni includono la pulizia regolare delle parti in movimento, la lubrificazione e il controllo dei sistemi elettronici."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "La mia macchina mi verrà spedita direttamente in azienda?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, la Wrap 400 Plus verrà spedita direttamente nella tua azienda, con opzioni di installazione e assistenza disponibili."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Posso effettuare una prova della macchina prima dell’acquisto?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, puoi testare la Wrap 400 Plus presso la nostra sede o inviarci un campione del tuo prodotto per un video dimostrativo."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Qual è la garanzia offerta per la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La Wrap 400 Plus è coperta da una garanzia di 12 mesi, con contratti di manutenzione post-garanzia disponibili."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Come si installa la macchina Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Per assistervi nell'installazione della Wrap 400 Plus, è disponibile un
-				  video tutorial che spiega passo dopo passo le procedure
-				  necessarie. È sufficiente inviare una richiesta via email per
-				  ricevere il link che consentirà di accedere al video."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Come si collega la Wrap 400 Plus ad altre macchine?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Per il collegamento ad altre macchine è disponibile un video tutorial. Invia una richiesta via email per accedere al contenuto."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "La Wrap 400 Plus è compatibile con imballaggi ecologici?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "No, i materiali ecologici non sopportano la termosaldatura."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quanto è grande la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La Wrap 400 Plus ha un'altezza di 1.8m, una larghezza di 0.72m e una profondità di 2.5m."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Quanto pesa la Wrap 400 Plus?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Il peso si aggira tra i 500-700 kg."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Qual è la durata della vita stimata del macchinario?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Con una corretta manutenzione, la durata può superare i 10 anni."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Posso pulire facilmente il macchinario dopo l'uso?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Sì, il macchinario è progettato per facilitare la pulizia grazie alle superfici accessibili e ai materiali utilizzati."
-				}
-			  },
-			  {
-				"@type": "Question",
-				"name": "Il macchinario è conforme alle normative locali e internazionali sulla sicurezza alimentare?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "Il macchinario è progettato per essere conforme alle normative locali e internazionali sulla sicurezza alimentare, garantendo standard elevati di igiene e sicurezza."
-			    }
-			  },
-			  {
-			    "@type": "Question",
-				"name": "È adatto all'uso in ambienti a temperatura controllata o richiede specifiche condizioni di lavoro?",
-				"acceptedAnswer": {
-				  "@type": "Answer",
-				  "text": "La temperatura ambiente ottimale è tra i 20/25°C, con un massimo di 32°C."
-				}
-			  }
-			]
-		}
-	</script>
+        "weight": {
+          "@type": "QuantitativeValue",
+          "minValue": "500",
+          "maxValue": "700",
+          "unitText": "kg"
+        },
+        "material": ["Alluminio", "Acciaio Inox", "Plastica Tecnica"],
+        "height": {
+          "@type": "QuantitativeValue",
+          "value": "1.8",
+          "unitText": "m"
+        },
+        "width": {
+          "@type": "QuantitativeValue",
+          "value": "0.72",
+          "unitText": "m"
+        },
+        "depth": {
+          "@type": "QuantitativeValue",
+          "value": "2.5",
+          "unitText": "m"
+        },
 
-	<title>Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack - Selmi Group</title>
-	<meta name="description"
-		content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.">
-	<meta name="robots" content="index, follow">
-	<meta name="author" content="CodeFactory Torino">
+        "brand": {
+          "@type": "Organization",
+          "name": "Selmi Group",
+          "logo": "https://www.selmi-group.it/img/logo-selmi-w.svg",
+          "url": "https://www.selmi-group.it",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39 0172 479 273",
+            "contactType": "Customer Service",
+            "areaServed": "IT",
+            "availableLanguage": "Italian"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Langhe 25",
+            "addressLocality": "Pollenzo",
+            "addressRegion": "Cuneo",
+            "postalCode": "12042",
+            "addressCountry": "Italy",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "44.6940727",
+              "longitude": "7.9033824"
+            },
+            "hasMap": "https://www.google.com/maps/place/Selmi+Srl/@44.693904,7.9033824,17.5z/data=!4m6!3m5!1s0x12d2b297a5290c0f:0x9147fdc41d8203d5!8m2!3d44.6940689!4d7.9059996!16s%2Fg%2F1hc47k8qr?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D"
+          },
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "1.00",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html"
+          }
+        }
+      }
+    </script>
 
-	<meta property="og:type" content="business.business">
-	<meta property="og:site_name"
-		content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack - Selmi Group">
-	<meta property="og:url" content="https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html">
-	<meta property="og:image" content="https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg">
-	<meta property="og:title" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack">
-	<meta property="og:description"
-		content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.">
-	<meta property="business:contact_data:street_address" content="Via Langhe 25">
-	<meta property="business:contact_data:locality" content="Pollenzo">
-	<meta property="business:contact_data:region" content="Cuneo">
-	<meta property="business:contact_data:postal_code" content="12042">
-	<meta property="business:contact_data:country_name" content="Italy">
+  <script type="application/ld+json">
+      {
+      	"@context": "https://schema.org",
+      	"@type": "FAQPage",
+      	"mainEntity": [
+      	  {
+      		"@type": "Question",
+      		"name": "Come posso testare il funzionamento della Wrap 400 Plus per il mio prodotto?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Puoi provare la macchina per il confezionamento alimentare direttamente presso la nostra azienda, oppure inviaci un campione del tuo prodotto e riceverai un video che mostra il processo di confezionamento e il prodotto finale."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali tipi di prodotti possono essere confezionati con la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La Wrap 400 Plus è estremamente versatile e adatta a confezionare prodotti alimentari di varie forme e dimensioni, come praline, barrette di cioccolato e altri alimenti. Assicura confezionamenti personalizzati e sicuri."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali sono le principali caratteristiche tecnologiche della Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Include tecnologie come box motion, no product no bag, termosaldatura, raffreddamento integrato e una stampante personalizzata."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Come funziona la tecnologia 'no product no bag'?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Assicura che la macchina non crei una busta vuota se il prodotto non è presente, riducendo gli sprechi e ottimizzando il processo."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali vantaggi offre la tecnologia box motion della Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Garantisce un confezionamento preciso e rapido, soprattutto per prodotti alimentari delicati o di forme irregolari."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Posso personalizzare le confezioni con la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, grazie alla stampante integrata, permette di personalizzare le confezioni con loghi, testi o codici a barre."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "La Wrap 400 Plus è facile da usare per il confezionamento alimentare?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, è progettata per essere user-friendly, con funzionalità intuitive e automatizzate, che semplificano il processo di confezionamento."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Qual è la capacità produttiva oraria della Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La Wrap 400 Plus può confezionare tra le 60 e 120 confezioni al minuto."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali dimensioni massime di prodotto può gestire la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Può confezionare prodotti con una larghezza fino a 130 mm e un'altezza massima di 45 mm."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali materiali vengono utilizzati per l'imballaggio?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Supporta plastica, carta e alluminio, offrendo opzioni per imballaggi sostenibili e tradizionali."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali sono i sistemi di sicurezza integrati nella Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "È dotata di sensori di sicurezza avanzati, protezioni meccaniche e allarmi per garantire un funzionamento sicuro."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "La Wrap 400 Plus può stampare etichette o codici sulle confezioni?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, grazie alla stampante integrata, può stampare dati come date di scadenza, lotti di produzione, loghi e grafiche."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Qual è il consumo energetico della Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La potenza totale installata è di 2 kW, richiede un'alimentazione elettrica a 220 VAC."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Posso integrare la Wrap 400 Plus nella mia linea di produzione esistente?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, la Wrap 400 Plus può essere facilmente integrata in una linea di produzione esistente ed è compatibile con altre macchine."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quali sono le operazioni di manutenzione richieste per la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Le operazioni includono la pulizia regolare delle parti in movimento, la lubrificazione e il controllo dei sistemi elettronici."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "La mia macchina mi verrà spedita direttamente in azienda?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, la Wrap 400 Plus verrà spedita direttamente nella tua azienda, con opzioni di installazione e assistenza disponibili."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Posso effettuare una prova della macchina prima dell’acquisto?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, puoi testare la Wrap 400 Plus presso la nostra sede o inviarci un campione del tuo prodotto per un video dimostrativo."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Qual è la garanzia offerta per la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La Wrap 400 Plus è coperta da una garanzia di 12 mesi, con contratti di manutenzione post-garanzia disponibili."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Come si installa la macchina Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Per assistervi nell'installazione della Wrap 400 Plus, è disponibile un
+      		  video tutorial che spiega passo dopo passo le procedure
+      		  necessarie. È sufficiente inviare una richiesta via email per
+      		  ricevere il link che consentirà di accedere al video."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Come si collega la Wrap 400 Plus ad altre macchine?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Per il collegamento ad altre macchine è disponibile un video tutorial. Invia una richiesta via email per accedere al contenuto."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "La Wrap 400 Plus è compatibile con imballaggi ecologici?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "No, i materiali ecologici non sopportano la termosaldatura."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quanto è grande la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La Wrap 400 Plus ha un'altezza di 1.8m, una larghezza di 0.72m e una profondità di 2.5m."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Quanto pesa la Wrap 400 Plus?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Il peso si aggira tra i 500-700 kg."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Qual è la durata della vita stimata del macchinario?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Con una corretta manutenzione, la durata può superare i 10 anni."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Posso pulire facilmente il macchinario dopo l'uso?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Sì, il macchinario è progettato per facilitare la pulizia grazie alle superfici accessibili e ai materiali utilizzati."
+      		}
+      	  },
+      	  {
+      		"@type": "Question",
+      		"name": "Il macchinario è conforme alle normative locali e internazionali sulla sicurezza alimentare?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "Il macchinario è progettato per essere conforme alle normative locali e internazionali sulla sicurezza alimentare, garantendo standard elevati di igiene e sicurezza."
+      	    }
+      	  },
+      	  {
+      	    "@type": "Question",
+      		"name": "È adatto all'uso in ambienti a temperatura controllata o richiede specifiche condizioni di lavoro?",
+      		"acceptedAnswer": {
+      		  "@type": "Answer",
+      		  "text": "La temperatura ambiente ottimale è tra i 20/25°C, con un massimo di 32°C."
+      		}
+      	  }
+      	]
+      }
+    </script>
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack">
-	<meta name="twitter:site" content="https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html">
-	<meta name="twitter:description"
-		content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto.">
-	<meta name="twitter:image" content="https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg">
-	<meta name="twitter:image:alt" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack">
+  <title>
+    Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack -
+    Selmi Group
+  </title>
+  <meta name="description"
+    content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="CodeFactory Torino" />
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<!-- Bootstrap Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<!-- custom css -->
-	<link rel="stylesheet" href="./styles/style.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+
+  <meta property="og:type" content="business.business" />
+  <meta property="og:site_name"
+    content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack - Selmi Group" />
+  <meta property="og:url" content="https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html" />
+  <meta property="og:image" content="https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg" />
+  <meta property="og:title" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack" />
+  <meta property="og:description"
+    content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto." />
+  <meta property="business:contact_data:street_address" content="Via Langhe 25" />
+  <meta property="business:contact_data:locality" content="Pollenzo" />
+  <meta property="business:contact_data:region" content="Cuneo" />
+  <meta property="business:contact_data:postal_code" content="12042" />
+  <meta property="business:contact_data:country_name" content="Italy" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack" />
+  <meta name="twitter:site" content="https://www.selmi-group.it/confezionatrice-flow-pack-wrap400.html" />
+  <meta name="twitter:description"
+    content="Wrap 400 Plus: Macchina per il confezionamento di prodotti alimentari con sistema flow pack. Flopacca e confeziona velocemente grandi quantità di prodotto." />
+  <meta name="twitter:image" content="https://www.selmi-group.it/assets/img/macchina-wrap400-flowpack.jpg" />
+  <meta name="twitter:image:alt" content="Wrap 400 Plus: Macchina per il confezionamento con sistema flow pack" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top px-3">
-		<a class="navbar-brand" href="#">
-			<img src="./assets/img/logo-selmi-w.svg" width="300" height="78"
-				alt="Logo del Gruppo Selmi: macchine per la lavorazione del cioccolato">
-		</a>
-		<button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item active"><a class="nav-link" href="./#hero">WRAP 400 PLUS</a></li>
-				<li class="nav-item"><a class="nav-link" href="./#gallery">GALLERY</a></li>
-				<li class="nav-item"><a class="nav-link" href="./#scheda-tecnica">SCHEDA TECNICA</a></li>
-				<li class="nav-item"><a class="nav-link" href="./#FAQ">FAQ</a></li>
-				<li class="nav-item d-md-none"><a class="nav-link" href="./#contattaci">CONTATTACI</a></li>
-			</ul>
-		</div>
-		<a class="btn btn-light text-dark ms-3 rounded-pill fw-bold" href="#contattaci" id="navCTA"><i
-				class="bi bi-envelope-at-fill"></i><span> CONTATTACI</span></a>
-		<a class="btn btn-danger text-light ms-3 rounded-pill fw-bold" href="tel:1234567890" id="callNow"
-			aria-label="Chiama ora"><i class="bi bi-telephone-fill"></i></a>
-	</nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top px-3">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/img/logo-selmi-w.svg" width="300" height="78"
+        alt="Logo del Gruppo Selmi: macchine per la lavorazione del cioccolato" />
+    </a>
+    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./#hero">WRAP 400 PLUS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./#scheda-tecnica">SCHEDA TECNICA</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./#FAQ">FAQ</a></li>
+        <li class="nav-item d-md-none">
+          <a class="nav-link" href="./#contattaci">CONTATTACI</a>
+        </li>
+      </ul>
+    </div>
+    <a class="btn btn-light text-dark ms-3 rounded-pill fw-bold" href="#contattaci" id="navCTA"><i
+        class="bi bi-envelope-at-fill"></i><span> CONTATTACI</span></a>
+    <a class="btn btn-danger text-light ms-3 rounded-pill fw-bold" href="tel:1234567890" id="callNow"
+      aria-label="Chiama ora"><i class="bi bi-telephone-fill"></i></a>
+  </nav>
 
-	<!-- Main -->
-	<main>
-		<!-- Hero -->
-		<section id="hero">
-			<div class="vh-100 text-light overflow-d-none">
-				<video id="hero-video" class="h-100 w-100 object-fit-cover position-fixed top-0 start-0 z-n1"
-					playsinline="playsinline" muted="muted" loop="loop">
-					<source src="./assets/video/wrap-400-plus-macchina-confezionamento-flow-pack-selmi.mp4"
-						type="video/mp4">
-				</video>
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="vh-100 text-light overflow-d-none">
+        <video id="hero-video" class="h-100 w-100 object-fit-cover position-fixed top-0 start-0 z-n1"
+          playsinline="playsinline" muted="muted" loop="loop">
+          <source src="./assets/video/wrap-400-plus-macchina-confezionamento-flow-pack-selmi.mp4" type="video/mp4" />
+        </video>
 
-				<div id="hero-text"
-					class="d-flex flex-column justify-content-around align-items-center text-center w-100 h-100">
-					<h1 class="fw-bold mb-3">Wrap 400 Plus
-						<span class="d-block fs-3 mt-3">Macchina per il confezionamento con sistema flow pack</span>
-					</h1>
-					<p>La Wrap 400 consente il confezionamento di innumerevoli prodotti con dimensioni e formati
-						differenti, offrendo la possibilità all'utilizzatore di scegliere tra diverse tipologie di
-						materiale di incarto.</p>
-				</div>
+        <div id="hero-text"
+          class="d-flex flex-column justify-content-around align-items-center text-center w-100 h-100">
+          <h1 class="fw-bold mb-3">
+            Wrap 400 Plus
+            <span class="d-block fs-3 mt-3">Macchina per il confezionamento con sistema flow pack</span>
+          </h1>
+          <p>
+            La Wrap 400 consente il confezionamento di innumerevoli prodotti
+            con dimensioni e formati differenti, offrendo la possibilità
+            all'utilizzatore di scegliere tra diverse tipologie di materiale
+            di incarto.
+          </p>
+        </div>
 
-				<div id="hero-play-button" class="text-danger">
-					<i class="bi bi-play-fill"></i>
-				</div>
+        <div id="hero-play-button" class="text-danger">
+          <i class="bi bi-play-fill"></i>
+        </div>
 
-				<div id="hero-more-info">
-					<a href="#video" class="btn btn-danger text-light rounded-pill fw-bold">SCOPRI DI PIÙ</a>
-				</div>
-			</div>
-		</section>
+        <div id="hero-more-info">
+          <a href="#video" class="btn btn-danger text-light rounded-pill fw-bold">SCOPRI DI PIÙ</a>
+        </div>
+      </div>
+    </section>
 
-		<!-- GALLERY -->
-		<section id="gallery">
-			<div class="container-fluid px-4 py-5 d-flex justify-content-center align-items-center bg-white">
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container-fluid px-4 py-5 d-flex justify-content-center align-items-center bg-white">
+        <div class="container row justify-content-center">
+          <!-- 1 componente, titolo della gallery -->
+          <div class="col-12">
+            <h2 class="text-center mb-4">Scopri la nuova Wrap 400 Plus</h2>
+          </div>
 
-				<div class="container row justify-content-center">
+          <!-- 2 componente, carosello della gallery -->
+          <div id="carouselGallery" class="carousel slide col-10 col-lg-7 pb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            </div>
 
-					<!-- 1 componente, titolo della gallery -->
-					<div class="col-12">
-						<h2 class="text-center mb-4">Scopri la nuova Wrap 400 Plus</h2>
-					</div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <picture>
+                  <source srcset="
+                        ./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.avif
+                      " type="image/avif" />
+                  <source srcset="
+                        ./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.webp
+                      " type="image/webp" />
+                  <img src="./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.png"
+                    class="d-block w-100 img-fluid" alt="Macchina wrap400 flowpack" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Macchina wrap400 flowpack</h5> -->
+                  <p>
+                    La <strong>Wrap 400 Plus</strong>, macchina per il
+                    confezionamento con sistema <strong>Flow-Pack</strong>, è
+                    progettata per confezionare prodotti alimentari e dolciari
+                    in modo rapido e sicuro. Grazie al suo design compatto e
+                    alla <strong>tecnologia avanzata</strong>, garantisce
+                    <strong>precisione</strong> e
+                    <strong>velocità</strong> nel processo di imballaggio,
+                    riducendo sprechi e massimizzando l'efficienza produttiva.
+                    Ideale per le aziende che necessitano di una soluzione
+                    <strong>affidabile</strong> e
+                    <strong>versatile</strong> per ottimizzare il
+                    confezionamento dei loro prodotti, mantenendo alti
+                    standard di <strong>qualità</strong> e
+                    <strong>produttività</strong>.
+                  </p>
+                </div>
+              </div>
 
-					<!-- 2 componente, carosello della gallery -->
-					<div id="carouselGallery" class="carousel slide col-10 col-lg-7 pb-5" data-bs-ride="carousel">
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="./assets/img/cioccolato-caramello-su-rullo.avif" type="image/avif" />
+                  <source srcset="./assets/img/cioccolato-caramello-su-rullo.webp" type="image/webp" />
+                  <img src="./assets/img/cioccolato-caramello-su-rullo.jpg" class="d-block w-100 img-fluid"
+                    alt="Cioccolato caramello su rullo" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Confezionamento di Cioccolato</h5> -->
+                  <p>
+                    La nostra <strong>Wrap 400 Plus</strong> offre
+                    <strong>alta precisione</strong>, ideale per il
+                    confezionamento di <strong>prodotti dolciari</strong> come
+                    cioccolatini. Perfetta per aziende che cercano soluzioni
+                    <strong>efficienti</strong> e <strong>affidabili</strong>.
+                  </p>
+                </div>
+              </div>
 
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active"
-								aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="1"
-								aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="2"
-								aria-label="Slide 3"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="3"
-								aria-label="Slide 4"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="4"
-								aria-label="Slide 5"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="5"
-								aria-label="Slide 6"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="6"
-								aria-label="Slide 7"></button>
-							<button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="7"
-								aria-label="Slide 8"></button>
-						</div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="./assets/img/bustine-incartate-su-rullo.avif" type="image/avif" />
+                  <source srcset="./assets/img/bustine-incartate-su-rullo.webp" type="image/webp" />
+                  <img src="./assets/img/bustine-incartate-su-rullo.jpg" class="d-block w-100 img-fluid"
+                    alt="Bustine incartate su rullo" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Bustine incartate su rullo</h5> -->
+                  <p>
+                    Durante la fase finale del processo di confezionamento, i
+                    vostri prodotti verranno avvolti in
+                    <strong>packaging sicuro</strong> e
+                    <strong>resistente</strong>. Ideale per le aziende che
+                    cercano una soluzione <strong>efficiente</strong> per la
+                    distribuzione di <strong>articoli alimentari</strong>, il
+                    sistema garantisce <strong>velocità</strong> e
+                    <strong>qualità costante</strong>, riducendo al minimo gli
+                    sprechi e aumentando la <strong>produttività</strong>.
+                  </p>
+                </div>
+              </div>
 
-						<div class="carousel-inner">
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="./assets/img/ciottolatini-rotondi-incartati.avif" type="image/avif" />
+                  <source srcset="./assets/img/ciottolatini-rotondi-incartati.webp" type="image/webp" />
+                  <img src="./assets/img/ciottolatini-rotondi-incartati.jpg" class="d-block w-100 img-fluid"
+                    alt="Cioccolatini rotondi incartati" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Cioccolatini rotondi incartati</h5> -->
+                  <p>
+                    La <strong>Wrap 400 Plus</strong> è compatibile con
+                    <strong>materiali diversi</strong>, come diversi tipi di
+                    <strong>plastica</strong> e <strong>carta</strong>. Questa
+                    varietà di imballaggi consente di soddisfare le
+                    <strong>esigenze di conservazione</strong> del prodotto.
+                    Perfetto per le aziende che cercano soluzioni di packaging
+                    <strong>flessibili</strong>, <strong>sicure</strong> e
+                    adatte a <strong>diversi settori industriali</strong>.
+                  </p>
+                </div>
+              </div>
 
-							<div class="carousel-item active">
-								<picture>
-									<source srcset="./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.webp"
-										type="image/webp" />
-									<img src="./assets/img/macchina-wrap400-flowpack-sfondo-trasparente.png"
-										class="d-block w-100 img-fluid" alt="Macchina wrap400 flowpack">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Macchina wrap400 flowpack</h5> -->
-									<p>La <strong>Wrap 400 Plus</strong>, macchina per il confezionamento con sistema
-										<strong>Flow-Pack</strong>, è progettata per confezionare prodotti alimentari e
-										dolciari in modo rapido e sicuro. Grazie al suo design compatto e alla
-										<strong>tecnologia avanzata</strong>, garantisce <strong>precisione</strong> e
-										<strong>velocità</strong> nel processo di imballaggio, riducendo sprechi e
-										massimizzando l'efficienza produttiva. Ideale per le aziende che necessitano di
-										una soluzione <strong>affidabile</strong> e <strong>versatile</strong> per
-										ottimizzare il confezionamento dei loro prodotti, mantenendo alti standard di
-										<strong>qualità</strong> e <strong>produttività</strong>.
-									</p>
-								</div>
-							</div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="
+                        ./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.avif
+                      " type="image/avif" />
+                  <source srcset="
+                        ./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.webp
+                      " type="image/webp" />
+                  <img src="./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.jpg"
+                    class="d-block w-100 img-fluid" alt="Tre sfere di cioccolato incartato" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Tre sfere di cioccolato incartato</h5> -->
+                  <p>
+                    La <strong>Wrap 400 Plus</strong> offre la capacità di
+                    imballare <strong>prodotti delicati</strong> e di
+                    <strong>piccole dimensioni</strong>. Ideale per le aziende
+                    che cercano soluzioni <strong>precise</strong> e
+                    <strong>sicure</strong> per mantenere la
+                    <strong>freschezza</strong> e l'<strong>integrità del prodotto</strong>.
+                  </p>
+                </div>
+              </div>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/cioccolato-caramello-su-rullo.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/cioccolato-caramello-su-rullo.webp"
-										type="image/webp" />
-									<img src="./assets/img/cioccolato-caramello-su-rullo.jpg"
-										class="d-block w-100 img-fluid" alt="Cioccolato caramello su rullo">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Confezionamento di Cioccolato</h5> -->
-									<p>La nostra <strong>Wrap 400 Plus</strong> offre <strong>alta precisione</strong>,
-										ideale per il confezionamento di <strong>prodotti dolciari</strong> come
-										cioccolatini. Perfetta per aziende che cercano soluzioni
-										<strong>efficienti</strong> e <strong>affidabili</strong>.
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="
+                        ./assets/img/tavolette-cioccolata-incarto-trasparente.avif
+                      " type="image/avif" />
+                  <source srcset="
+                        ./assets/img/tavolette-cioccolata-incarto-trasparente.webp
+                      " type="image/webp" />
+                  <img src="./assets/img/tavolette-cioccolata-incarto-trasparente.jpg" class="d-block w-100 img-fluid"
+                    alt="Tavolette cioccolata incartata" />
+                </picture>
 
-									</p>
-								</div>
-							</div>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Tavolette cioccolata incartata</h5> -->
+                  <p>
+                    Con la <strong>Wrap 400 Plus</strong> potrete confezionare
+                    in modo <strong>sicuro</strong> e
+                    <strong>resistente</strong>. Questo tipo di imballaggio è
+                    perfetto per <strong>prodotti più grandi</strong> e
+                    <strong>robusti</strong>, garantendo
+                    <strong>protezione</strong> e
+                    <strong>lunga conservazione</strong>. Ottimale per chi
+                    desidera imballare
+                    <strong>prodotti di forme e dimensioni diverse</strong>.
+                  </p>
+                </div>
+              </div>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/bustine-incartate-su-rullo.avif" type="image/avif" />
-									<source srcset="./assets/img/bustine-incartate-su-rullo.webp" type="image/webp" />
-									<img src="./assets/img/bustine-incartate-su-rullo.jpg"
-										class="d-block w-100 img-fluid" alt="Bustine incartate su rullo">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Bustine incartate su rullo</h5> -->
-									<p>Durante la fase finale del processo di confezionamento, i vostri prodotti
-										verranno avvolti in <strong>packaging sicuro</strong> e
-										<strong>resistente</strong>. Ideale per le aziende che cercano una soluzione
-										<strong>efficiente</strong> per la distribuzione di <strong>articoli
-											alimentari</strong>, il sistema garantisce <strong>velocità</strong> e
-										<strong>qualità costante</strong>, riducendo al minimo gli sprechi e aumentando
-										la <strong>produttività</strong>.
-									</p>
-								</div>
-							</div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="./assets/img/tre-tipi-di-incarto.avif" type="image/avif" />
+                  <source srcset="./assets/img/tre-tipi-di-incarto.webp" type="image/webp" />
+                  <img src="./assets/img/tre-tipi-di-incarto.jpg" class="d-block w-100 img-fluid"
+                    alt="Tre tipi di incarto" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Tre tipi di incarto</h5> -->
+                  <p>
+                    La nuova <strong>Wrap 400 Plus</strong>, che offre
+                    <strong>versatilità</strong> e
+                    <strong>personalizzazione</strong> con
+                    <strong>tecnologia avanzata</strong> come
+                    <strong>box motion</strong>,
+                    <strong>termosaldatura</strong>, e
+                    <strong>stampa integrata</strong>. Testa la macchina in
+                    azienda o invia un campione del tuo prodotto per una
+                    <strong>dimostrazione video</strong>. Ideale per chi
+                    desidera portare il proprio packaging a un
+                    <strong>livello superiore</strong>.
+                  </p>
+                </div>
+              </div>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/ciottolatini-rotondi-incartati.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/ciottolatini-rotondi-incartati.webp"
-										type="image/webp" />
-									<img src="./assets/img/ciottolatini-rotondi-incartati.jpg"
-										class="d-block w-100 img-fluid" alt="Cioccolatini rotondi incartati">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Cioccolatini rotondi incartati</h5> -->
-									<p>La <strong>Wrap 400 Plus</strong> è compatibile con <strong>materiali
-											diversi</strong>, come diversi tipi di <strong>plastica</strong> e
-										<strong>carta</strong>. Questa varietà di imballaggi consente di soddisfare le
-										<strong>esigenze di conservazione</strong> del prodotto. Perfetto per le aziende
-										che cercano soluzioni di packaging <strong>flessibili</strong>,
-										<strong>sicure</strong> e adatte a <strong>diversi settori industriali</strong>.
-									</p>
-								</div>
-							</div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="./assets/img/quadratini-cioccolata-incartati.avif" type="image/avif" />
+                  <source srcset="./assets/img/quadratini-cioccolata-incartati.webp" type="image/webp" />
+                  <img src="./assets/img/quadratini-cioccolata-incartati.jpg" class="d-block w-100 img-fluid"
+                    alt="Quadratini cioccolata incartati" />
+                </picture>
+                <div class="carousel-caption-below text-center">
+                  <!-- <h5>Quadratini cioccolata incartati</h5> -->
+                  <p>
+                    Con la <strong>Wrap 400 Plus</strong> potrai confezionare
+                    alla perfezione qualsiasi formato di
+                    <strong>barrette di cioccolato</strong>. La
+                    confezionatrice accetta ad esempio
+                    <strong>barrette di forme rettangolari</strong>,
+                    <strong>quadrate</strong> o <strong>praline</strong>. La
+                    nuova <strong>Wrap 400 Plus</strong> è perfetta per ogni
+                    tua <strong>esigenza</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.webp"
-										type="image/webp" />
-									<img src="./assets/img/tre-sfere-di-cioccolato-incarto-trasparente.jpg" class="d-block w-100
-									img-fluid" alt="Tre sfere di cioccolato incartato">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Tre sfere di cioccolato incartato</h5> -->
-									<p>La <strong>Wrap 400 Plus</strong> offre la capacità di imballare <strong>prodotti
-											delicati</strong> e di <strong>piccole dimensioni</strong>. Ideale per le
-										aziende che cercano soluzioni <strong>precise</strong> e <strong>sicure</strong>
-										per mantenere la <strong>freschezza</strong> e l'<strong>integrità del
-											prodotto</strong>.
-									</p>
-								</div>
-							</div>
+    <!-- VIDEO -->
+    <section id="video">
+      <div class="container-fluid py-5 bg-light">
+        <h2 class="text-center text-dark mb-4">
+          Porta il Tuo Packaging ad un Nuovo Livello!
+        </h2>
+        <div class="container-lg d-flex flex-column flex-lg-row justify-content-center">
+          <div class="col-12 col-lg-8 video-container">
+            <video controls class="video-element">
+              <source src="./assets/video/video-descrittivo.avi" type="video/avi" />
+              <source src="./assets/video/video-descrittivo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center ps-lg-5 py-5 text-dark">
+            La nuova Wrap 400 Plus, che offre versatilità e personalizzazione
+            con tecnologia avanzata come box motion, termosaldatura, e stampa
+            integrata. Testa la macchina in azienda o invia un campione del
+            tuo prodotto per una dimostrazione video. Ideale per chi desidera
+            portare il proprio packaging a un livello superiore.
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/tavolette-cioccolata-incarto-trasparente.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/tavolette-cioccolata-incarto-trasparente.webp"
-										type="image/webp" />
-									<img src="./assets/img/tavolette-cioccolata-incarto-trasparente.jpg"
-										class="d-block w-100 img-fluid" alt="Tavolette cioccolata incartata">
-								</picture>
+    <!-- SCHEDA TECNICA -->
+    <section id="scheda-tecnica">
+      <div class="container-fluid px-4 py-5 bg-white">
+        <div class="container">
+          <h2 class="text-center mb-4">
+            Specifiche Tecniche - Wrap 400 Plus
+          </h2>
+          <div id="specs-tables" class="col-12 col-md-8 mx-auto justify-content-center align-items-center"></div>
+        </div>
+      </div>
+    </section>
 
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Tavolette cioccolata incartata</h5> -->
-									<p>Con la <strong>Wrap 400 Plus</strong> potrete confezionare in modo
-										<strong>sicuro</strong> e <strong>resistente</strong>. Questo tipo di
-										imballaggio è perfetto per <strong>prodotti più grandi</strong> e
-										<strong>robusti</strong>, garantendo <strong>protezione</strong> e <strong>lunga
-											conservazione</strong>. Ottimale per chi desidera imballare <strong>prodotti
-											di forme e dimensioni diverse</strong>.
+    <!-- FAQ -->
+    <section id="FAQ">
+      <div class="container-fluid px-4 py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center mb-4">FAQ</h2>
+            </div>
+            <div class="accordion col-12 col-md-8 mx-auto my-5" id="faq">
+              <!--Prima domanda-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Come posso testare il funzionamento della Wrap 400 Plus
+                    per il mio prodotto?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Puoi provare la macchina per il confezionamento alimentare
+                    <strong>direttamente presso la nostra azienda</strong> ,
+                    oppure
+                    <strong> inviaci un campione del tuo prodotto </strong> e
+                    riceverai un video che mostra il processo di
+                    confezionamento e il prodotto finale.
+                  </div>
+                </div>
+              </div>
 
-									</p>
-								</div>
-							</div>
+              <!--Seconda domanda-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Quali tipi di prodotti possono essere confezionati con la
+                    Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La Wrap 400 Plus è estremamente versatile e adatta a
+                    confezionare
+                    <strong>
+                      prodotti alimentari di varie forme e dimensioni </strong>, come praline, barrette di cioccolato e
+                    altri alimenti.
+                    Grazie alla tecnologia avanzata, assicura
+                    <strong>confezionamenti personalizzati e sicuri.</strong>
+                  </div>
+                </div>
+              </div>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/tre-tipi-di-incarto.avif" type="image/avif" />
-									<source srcset="./assets/img/tre-tipi-di-incarto.webp" type="image/webp" />
-									<img src="./assets/img/tre-tipi-di-incarto.jpg" class="d-block w-100 img-fluid"
-										alt="Tre tipi di incarto">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Tre tipi di incarto</h5> -->
-									<p>La nuova <strong>Wrap 400 Plus</strong>, che offre <strong>versatilità</strong> e
-										<strong>personalizzazione</strong> con <strong>tecnologia avanzata</strong> come
-										<strong>box motion</strong>, <strong>termosaldatura</strong>, e <strong>stampa
-											integrata</strong>. Testa la macchina in azienda o invia un campione del tuo
-										prodotto per una <strong>dimostrazione video</strong>. Ideale per chi desidera
-										portare il proprio packaging a un <strong>livello superiore</strong>.
+              <!-- Terza domanda-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Quali sono le principali caratteristiche tecnologiche
+                    della Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La Wrap 400 Plus include la tecnologia
+                    <strong>box motion</strong> , la funzione
+                    <strong> no product no bag</strong>, un sistema di
+                    termosaldatura, raffreddamento integrato e una
+                    <strong>stampante personalizzata</strong>. È progettata
+                    per garantire la massima igiene e semplicità d'uso.
+                  </div>
+                </div>
+              </div>
 
-									</p>
-								</div>
-							</div>
+              <!--Quarta domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Come funziona la tecnologia "no product no bag"?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La tecnologia no product no bag
+                    <strong>assicura che la macchina non crei una busta
+                      vuota</strong>
+                    se il prodotto non è presente,
+                    <strong>riducendo</strong> così
+                    <strong>gli sprechi</strong> e ottimizzando il processo di
+                    confezionamento alimentare.
+                  </div>
+                </div>
+              </div>
 
-							<div class="carousel-item">
-								<picture>
-									<source srcset="./assets/img/quadratini-cioccolata-incartati.avif"
-										type="image/avif" />
-									<source srcset="./assets/img/quadratini-cioccolata-incartati.webp"
-										type="image/webp" />
-									<img src="./assets/img/quadratini-cioccolata-incartati.jpg"
-										class="d-block w-100 img-fluid" alt="Quadratini cioccolata incartati">
-								</picture>
-								<div class="carousel-caption-below text-center">
-									<!-- <h5>Quadratini cioccolata incartati</h5> -->
-									<p>Con la <strong>Wrap 400 Plus</strong> potrai confezionare alla perfezione
-										qualsiasi formato di <strong>barrette di cioccolato</strong>. La confezionatrice
-										accetta ad esempio <strong>barrette di forme rettangolari</strong>,
-										<strong>quadrate</strong> o <strong>praline</strong>. La nuova <strong>Wrap 400
-											Plus</strong> è perfetta per ogni tua <strong>esigenza</strong>.
+              <!--Quinta domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Quali vantaggi offre la tecnologia box motion della Wrap
+                    400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La tecnologia box motion della Wrap 400 Plus
+                    <strong>garantisce un confezionamento preciso e rapido</strong>, soprattutto
+                    <strong> per prodotti alimentari delicati</strong> o
+                    <strong>di forme irregolari</strong>. Questo sistema
+                    migliora l’efficienza del processo di imballaggio
+                    alimentare, assicurando la massima qualità del prodotto
+                    finale.
+                  </div>
+                </div>
+              </div>
 
-									</p>
-								</div>
-							</div>
+              <!--Sesta domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Posso personalizzare le confezioni con la Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sì, grazie alla stampante integrata, la Wrap 400 Plus
+                    <strong>permette di personalizzare</strong> le
+                    <strong>confezioni con loghi, testi</strong> o
+                    <strong>codici a barre</strong>, garantendo un packaging
+                    unico per ogni esigenza del settore confezionamento
+                    alimentare.
+                  </div>
+                </div>
+              </div>
 
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselGallery"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+              <!--Settima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    La Wrap 400 Plus è facile da usare per il confezionamento
+                    alimentare?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Assolutamente si, la Wrap 400 Plus è progettata per essere
+                    <strong>user-friendly</strong>. Le sue funzionalità
+                    intuitive e automatizzate semplificano il processo di
+                    confezionamento e richiedono una formazione minima,
+                    rendendola perfetta per ottimizzare la produzione
+                    <strong>senza complicazioni</strong>.
+                  </div>
+                </div>
+              </div>
 
-					</div>
+              <!--Ottava domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Qual è la capacità produttiva oraria della Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La Wrap 400 Plus può confezionare tra le
+                    <strong>60</strong> e
+                    <strong>120 confezioni al minuto</strong>, garantendo alta
+                    efficienza per il confezionamento alimentare in contesti
+                    produttivi intensi.
+                  </div>
+                </div>
+              </div>
 
-				</div>
+              <!--Nona domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Quali dimensioni massime di prodotto può gestire la Wrap
+                    400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Il macchinario può confezionare
+                    <strong>prodotti</strong> con una
+                    <strong>larghezza fino a 130 mm</strong> e un'
+                    <strong>altezza massima di 45 mm</strong>, rendendolo
+                    ideale per una vasta gamma di formati di cioccolato come
+                    praline, barrette e cioccolatini sfusi.
+                  </div>
+                </div>
+              </div>
 
-			</div>
-		</section>
+              <!--Decima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Quali materiali vengono utilizzati per l'imballaggio?
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La macchina
+                    <strong>supporta diversi materiali</strong> per
+                    l'imballaggio, inclusi <strong>plastica, carta</strong> e
+                    <strong>alluminio</strong>, offrendo opzioni per il
+                    confezionamento sostenibile e tradizionale, a seconda
+                    delle esigenze del prodotto.
+                  </div>
+                </div>
+              </div>
 
-		<!-- VIDEO -->
-		<section id="video">
-			<div class="container-fluid py-5 bg-light">
-				<h2 class="text-center text-dark mb-4">Porta il Tuo Packaging ad un Nuovo Livello!</h2>
-				<div class="container-lg d-flex flex-column flex-lg-row justify-content-center">
-					<div class="col-12 col-lg-8 video-container">
-						<video controls class="video-element">
-							<source src="./assets/video/video-descrittivo.avi" type="video/avi">
-							<source src="./assets/video/video-descrittivo.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div
-						class="col-12 col-lg-4 d-flex justify-content-center align-items-center ps-lg-5 py-5 text-dark">
-						La nuova Wrap 400 Plus, che offre versatilità e personalizzazione con tecnologia avanzata come
-						box motion, termosaldatura, e stampa integrata. Testa la macchina in azienda o invia un campione
-						del tuo prodotto per una dimostrazione video. Ideale per chi desidera portare il proprio
-						packaging a un livello superiore.
-					</div>
-				</div>
-			</div>
-		</section>
+              <!--undicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    Quali sono i sistemi di sicurezza integrati nella Wrap 400
+                    Plus?
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La macchina è dotata di
+                    <strong>sensori di sicurezza avanzati</strong>,
+                    <strong>protezioni meccaniche</strong> e
+                    <strong>allarmi</strong>, che garantiscono un
+                    funzionamento sicuro e <strong>rispettano</strong> le
+                    <strong>normative internazionali sulla sicurezza
+                      alimentare</strong>.
+                  </div>
+                </div>
+              </div>
 
-		<!-- SCHEDA TECNICA -->
-		<section id="scheda-tecnica">
-			<div class="container-fluid px-4 py-5 bg-white">
-				<div class="container">
-					<h2 class="text-center mb-4">Specifiche Tecniche - Wrap 400 Plus</h2>
-					<div id="specs-tables" class="col-12 col-md-8 mx-auto justify-content-center align-items-center">
+              <!--Dodicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwelve">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    La Wrap 400 Plus può stampare etichette o codici sulle
+                    confezioni?
+                  </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sì, grazie alla <strong>stampante integrata</strong> a
+                    <strong>trasferimento termico</strong>, la Wrap 400 Plus
+                    <strong>può stampare</strong> dati come
+                    <strong>date di scadenza, lotti di produzione, loghi e
+                      grafiche</strong>
+                    direttamente sulla confezione.
+                  </div>
+                </div>
+              </div>
 
-					</div>
-				</div>
-			</div>
-		</section>
+              <!--Tredicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingThirteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    Qual è il consumo energetico della Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La potenza totale installata del macchinario è di
+                    <strong>2 kW</strong>, e richiede un'alimentazione
+                    elettrica a <strong>220 VAC</strong>, rendendolo
+                    efficiente dal punto di vista energetico per la produzione
+                    continua.
+                  </div>
+                </div>
+              </div>
 
-		<!-- FAQ -->
-		<section id="FAQ">
-			<div class="container-fluid px-4 py-5 bg-light">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="text-center mb-4">FAQ</h2>
-						</div>
-						<div class="accordion col-12 col-md-8 mx-auto my-5" id="faq">
-							<!--Prima domanda-->
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingOne">
-									<button class="accordion-button" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Come posso testare il funzionamento della Wrap 400 Plus per il mio prodotto?
-									</button>
-								</h2>
-								<div id="collapseOne" class="accordion-collapse collapse show"
-									aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Puoi provare la macchina per il confezionamento alimentare <strong>direttamente
-											presso la nostra azienda</strong> , oppure
-										<strong> inviaci un campione del tuo prodotto </strong> e riceverai un video che
-										mostra il processo di confezionamento e il
-										prodotto finale.
-									</div>
-								</div>
-							</div>
+              <!--Quattordicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingFourteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    Posso integrare la Wrap 400 Plus nella mia linea di
+                    produzione esistente?
+                  </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sì, la Wrap 400 Plus può essere facilmente integrata in
+                    una linea di produzione esistente, ed
+                    <strong>è compatibile con altre macchine </strong> della
+                    linea <strong>Selmi o di altri produttori</strong>, oltre
+                    a funzionare in modo autonomo.
+                  </div>
+                </div>
+              </div>
 
-							<!--Seconda domanda-->
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingTwo">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Quali tipi di prodotti possono essere confezionati con la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La Wrap 400 Plus è estremamente versatile e adatta a confezionare
-										<strong> prodotti alimentari di varie forme e dimensioni </strong>, come
-										praline, barrette di cioccolato e altri alimenti.
-										Grazie alla tecnologia avanzata, assicura <strong>confezionamenti personalizzati
-											e sicuri.</strong>
-									</div>
-								</div>
-							</div>
+              <!--Quindicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingFifteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                    Quali sono le operazioni di manutenzione richieste per la
+                    Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Le operazioni di manutenzione ordinaria includono la
+                    <strong>pulizia regolare delle parti in movimento</strong>, la lubrificazione dei componenti
+                    meccanici e il
+                    controllo del corretto funzionamento dei sistemi
+                    elettronici, per garantire una lunga durata del
+                    macchinario.
+                  </div>
+                </div>
+              </div>
 
-							<!-- Terza domanda-->
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingThree">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseThree" aria-expanded="false"
-										aria-controls="collapseThree">
-										Quali sono le principali caratteristiche tecnologiche della Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseThree" class="accordion-collapse collapse"
-									aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La Wrap 400 Plus include la tecnologia <strong>box motion</strong> , la funzione
-										<strong> no product no bag</strong>, un sistema
-										di termosaldatura, raffreddamento integrato e una <strong>stampante
-											personalizzata</strong>. È progettata per garantire la
-										massima igiene e semplicità d'uso.
-									</div>
-								</div>
-							</div>
+              <!--Sedicesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingSixteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                    La mia macchina mi verrà spedita direttamente in azienda?
+                  </button>
+                </h2>
+                <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sì, la Wrap 400 Plus verrà spedita direttamente nella tua
+                    azienda, con opzioni di
+                    <strong>installazione e assistenza disponibili</strong>
+                    per garantire che il macchinario sia operativo in
+                    <strong>tempi rapidi</strong>.
+                  </div>
+                </div>
+              </div>
 
-							<!--Quarta domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingFour">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseFour" aria-expanded="false"
-										aria-controls="collapseFour">
-										Come funziona la tecnologia "no product no bag"?
-									</button>
-								</h2>
-								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La tecnologia no product no bag <strong>assicura che la macchina non crei una
-											busta vuota</strong> se il prodotto non è
-										presente, <strong>riducendo</strong> così <strong>gli sprechi</strong> e
-										ottimizzando il processo di confezionamento alimentare.
-									</div>
-								</div>
-							</div>
+              <!--Diciassettesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingSeventeen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                    Posso effettuare una prova della macchina prima
+                    dell’acquisto?
+                  </button>
+                </h2>
+                <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sì, mettiamo a disposizione la possibilità di
+                    <strong>testare la Wrap 400 Plus presso la nostra sede</strong>. In alternativa, puoi inviarci un
+                    <strong>campione del tuo prodotto</strong> e riceverai un
+                    <strong>video dimostrativo</strong> che illustra il
+                    funzionamento della macchina e il prodotto confezionato
+                  </div>
+                </div>
+              </div>
 
-							<!--Quinta domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingFive">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseFive" aria-expanded="false"
-										aria-controls="collapseFive">
-										Quali vantaggi offre la tecnologia box motion della Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La tecnologia box motion della Wrap 400 Plus <strong>garantisce un
-											confezionamento preciso e rapido</strong>, soprattutto
-										<strong> per prodotti alimentari delicati</strong> o <strong>di forme
-											irregolari</strong>. Questo sistema migliora l’efficienza
-										del processo di imballaggio alimentare, assicurando la massima qualità del
-										prodotto finale.
-									</div>
-								</div>
-							</div>
-
-							<!--Sesta domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingSix">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-										Posso personalizzare le confezioni con la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Sì, grazie alla stampante integrata, la Wrap 400 Plus <strong>permette di
-											personalizzare</strong> le
-										<strong>confezioni con loghi, testi</strong> o <strong>codici a barre</strong>,
-										garantendo un packaging unico per ogni esigenza
-										del settore confezionamento alimentare.
-									</div>
-								</div>
-							</div>
-
-							<!--Settima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingSeven">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseSeven" aria-expanded="false"
-										aria-controls="collapseSeven">
-										La Wrap 400 Plus è facile da usare per il confezionamento alimentare?
-									</button>
-								</h2>
-								<div id="collapseSeven" class="accordion-collapse collapse"
-									aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Assolutamente si, la Wrap 400 Plus è progettata per essere
-										<strong>user-friendly</strong>. Le sue funzionalità intuitive e
-										automatizzate semplificano il processo di confezionamento e richiedono una
-										formazione minima, rendendola perfetta per
-										ottimizzare la produzione <strong>senza complicazioni</strong>.
-									</div>
-								</div>
-							</div>
-
-							<!--Ottava domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingEight">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseEight" aria-expanded="false"
-										aria-controls="collapseEight">
-										Qual è la capacità produttiva oraria della Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseEight" class="accordion-collapse collapse"
-									aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La Wrap 400 Plus può confezionare tra le <strong>60</strong> e <strong>120
-											confezioni al minuto</strong>, garantendo alta
-										efficienza per il confezionamento alimentare in contesti produttivi intensi.
-									</div>
-								</div>
-							</div>
-
-							<!--Nona domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingNine">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseNine" aria-expanded="false"
-										aria-controls="collapseNine">
-										Quali dimensioni massime di prodotto può gestire la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Il macchinario può confezionare <strong>prodotti</strong> con una
-										<strong>larghezza fino a 130
-											mm</strong> e un'
-										<strong>altezza massima di 45 mm</strong>, rendendolo ideale per una vasta
-										gamma di formati di cioccolato come praline,
-										barrette e cioccolatini sfusi.
-									</div>
-								</div>
-							</div>
-
-							<!--Decima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-										Quali materiali vengono utilizzati per l'imballaggio?
-									</button>
-								</h2>
-								<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La macchina <strong>supporta diversi materiali</strong> per l'imballaggio,
-										inclusi <strong>plastica, carta</strong> e
-										<strong>alluminio</strong>, offrendo opzioni per il confezionamento sostenibile
-										e tradizionale, a seconda delle esigenze del
-										prodotto.
-									</div>
-								</div>
-							</div>
-
-							<!--undicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingEleven">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseEleven" aria-expanded="false"
-										aria-controls="collapseEleven">
-										Quali sono i sistemi di sicurezza integrati nella Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseEleven" class="accordion-collapse collapse"
-									aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La macchina è dotata di <strong>sensori di sicurezza avanzati</strong>,
-										<strong>protezioni
-											meccaniche</strong> e <strong>allarmi</strong>, che garantiscono un
-										funzionamento sicuro e <strong>rispettano</strong> le <strong>normative
-											internazionali sulla
-											sicurezza alimentare</strong>.
-									</div>
-								</div>
-							</div>
-
-							<!--Dodicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwelve">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwelve" aria-expanded="false"
-										aria-controls="collapseTwelve">
-										La Wrap 400 Plus può stampare etichette o codici sulle confezioni?
-									</button>
-								</h2>
-								<div id="collapseTwelve" class="accordion-collapse collapse"
-									aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Sì, grazie alla <strong>stampante integrata</strong> a <strong>trasferimento
-											termico</strong>, la Wrap 400 Plus
-										<strong>può stampare</strong> dati come
-										<strong>date di scadenza, lotti di produzione, loghi e grafiche</strong>
-										direttamente sulla confezione.
-									</div>
-								</div>
-							</div>
-
-							<!--Tredicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingThirteen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseThirteen" aria-expanded="false"
-										aria-controls="collapseThirteen">
-										Qual è il consumo energetico della Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseThirteen" class="accordion-collapse collapse"
-									aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La potenza totale installata del macchinario è di <strong>2 kW</strong>, e
-										richiede un'alimentazione elettrica a
-										<strong>220 VAC</strong>, rendendolo efficiente dal punto di vista energetico
-										per la produzione continua.
-									</div>
-								</div>
-							</div>
-
-							<!--Quattordicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingFourteen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseFourteen" aria-expanded="false"
-										aria-controls="collapseFourteen">
-										Posso integrare la Wrap 400 Plus nella mia linea di produzione esistente?
-									</button>
-								</h2>
-								<div id="collapseFourteen" class="accordion-collapse collapse"
-									aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Sì, la Wrap 400 Plus può essere facilmente integrata in una linea di produzione
-										esistente, ed
-										<strong>è compatibile con altre macchine </strong> della linea <strong>Selmi o
-											di altri produttori</strong>, oltre a funzionare
-										in modo autonomo.
-									</div>
-								</div>
-							</div>
-
-							<!--Quindicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingFifteen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseFifteen" aria-expanded="false"
-										aria-controls="collapseFifteen">
-										Quali sono le operazioni di manutenzione richieste per la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseFifteen" class="accordion-collapse collapse"
-									aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Le operazioni di manutenzione ordinaria includono la <strong>pulizia regolare
-											delle parti in movimento</strong>, la
-										lubrificazione dei componenti meccanici e il controllo del corretto
-										funzionamento dei sistemi elettronici, per garantire una
-										lunga durata del macchinario.
-									</div>
-								</div>
-							</div>
-
-							<!--Sedicesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingSixteen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseSixteen" aria-expanded="false"
-										aria-controls="collapseSixteen">
-										La mia macchina mi verrà spedita direttamente in azienda?
-									</button>
-								</h2>
-								<div id="collapseSixteen" class="accordion-collapse collapse"
-									aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Sì, la Wrap 400 Plus verrà spedita direttamente nella tua azienda, con opzioni
-										di
-										<strong>installazione e assistenza disponibili</strong> per garantire che il
-										macchinario sia operativo in <strong>tempi rapidi</strong>.
-									</div>
-								</div>
-							</div>
-
-							<!--Diciassettesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingSeventeen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseSeventeen" aria-expanded="false"
-										aria-controls="collapseSeventeen">
-										Posso effettuare una prova della macchina prima dell’acquisto?
-									</button>
-								</h2>
-								<div id="collapseSeventeen" class="accordion-collapse collapse"
-									aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Sì, mettiamo a disposizione la possibilità di <strong>testare la Wrap 400 Plus
-											presso la nostra sede</strong>. In alternativa,
-										puoi inviarci un <strong>campione del tuo prodotto</strong> e riceverai un
-										<strong>video dimostrativo</strong> che illustra il
-										funzionamento della macchina e il prodotto confezionato
-									</div>
-								</div>
-							</div>
-
-							<!--Diciottesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingEighteen">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseEighteen" aria-expanded="false"
-										aria-controls="collapseEighteen">
-										Qual è la garanzia offerta per la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseEighteen" class="accordion-collapse collapse"
-									aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										La Wrap 400 Plus è coperta da una <strong>garanzia di 12 mesi</strong>, che
-										include la copertura per eventuali difetti di
-										fabbricazione. Inoltre, sono <strong>disponibili contratti di manutenzione
-											post-garanzia</strong> per un supporto continuo.
-									</div>
-								</div>
-							</div>
-							<!--Diciannovesima domanda 
+              <!--Diciottesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingEighteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                    Qual è la garanzia offerta per la Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La Wrap 400 Plus è coperta da una
+                    <strong>garanzia di 12 mesi</strong>, che include la
+                    copertura per eventuali difetti di fabbricazione. Inoltre,
+                    sono
+                    <strong>disponibili contratti di manutenzione
+                      post-garanzia</strong>
+                    per un supporto continuo.
+                  </div>
+                </div>
+              </div>
+              <!--Diciannovesima domanda 
 	   
 						**ASPETTIAMO RISPOSTA **
 						
@@ -1083,402 +1128,416 @@
 							</div>
 						</div>-->
 
-							<!--Ventesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwenty">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwenty" aria-expanded="false"
-										aria-controls="collapseTwenty">
-										Come si installa la macchina Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseTwenty" class="accordion-collapse collapse"
-									aria-labelledby="headingTwenty" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Per assistervi nell'installazione della Wrap 400 Plus, è disponibile un
-										<strong>video tutorial</strong> che spiega passo dopo passo le procedure
-										necessarie. È sufficiente <strong>inviare una richiesta via email</strong> per
-										ricevere il link che consentirà di accedere al video.
-									</div>
-								</div>
-							</div>
+              <!--Ventesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwenty">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                    Come si installa la macchina Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Per assistervi nell'installazione della Wrap 400 Plus, è
+                    disponibile un
+                    <strong>video tutorial</strong> che spiega passo dopo
+                    passo le procedure necessarie. È sufficiente
+                    <strong>inviare una richiesta via email</strong> per
+                    ricevere il link che consentirà di accedere al video.
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventunesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyOne">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyOne" aria-expanded="false"
-										aria-controls="collapseTwentyOne">
-										Come si collega la Wrap 400 Plus ad altre macchine?
-									</button>
-								</h2>
-								<div id="collapseTwentyOne" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyOne" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Per il collegamento tra altre macchine e la Wrap 400 Plus è disponibile un
-										<strong>video tutorial</strong> che illustra in
-										dettaglio le procedure necessarie. Per ottenere il video, è sufficiente
-										<strong>inviare una richiesta via email</strong>,
-										successivamente, verrà fornito il link per accedere al contenuto.
-									</div>
-								</div>
-							</div>
+              <!--Ventunesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                    Come si collega la Wrap 400 Plus ad altre macchine?
+                  </button>
+                </h2>
+                <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Per il collegamento tra altre macchine e la Wrap 400 Plus
+                    è disponibile un
+                    <strong>video tutorial</strong> che illustra in dettaglio
+                    le procedure necessarie. Per ottenere il video, è
+                    sufficiente
+                    <strong>inviare una richiesta via email</strong>,
+                    successivamente, verrà fornito il link per accedere al
+                    contenuto.
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventiduesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyTwo">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyTwo" aria-expanded="false"
-										aria-controls="collapseTwentyTwo">
-										La Wrap 400 Plus è compatibile con imballaggi ecologici?
-									</button>
-								</h2>
-								<div id="collapseTwentyTwo" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyTwo" data-bs-parent="#accordionExample">
-									<div class="accordion-body"><strong>No</strong>, perchè i materiali ecologici
-										<strong>non sopportano
-											la termosaldatura</strong>
-									</div>
-								</div>
-							</div>
+              <!--Ventiduesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                    La Wrap 400 Plus è compatibile con imballaggi ecologici?
+                  </button>
+                </h2>
+                <div id="collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwentyTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>No</strong>, perchè i materiali ecologici
+                    <strong>non sopportano la termosaldatura</strong>
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventitreesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyThree">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyThree" aria-expanded="false"
-										aria-controls="collapseTwentyThree">
-										Quant è grande la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseTwentyThree" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyThree" data-bs-parent="#accordionExample">
-									<div class="accordion-body">La Wrap 400 plus ha un <strong>altezza di 1.8m</strong>,
-										una <strong>larghezza di 0.72m</strong> e una <strong>profondità di
-											2.5m</strong></div>
-								</div>
-							</div>
+              <!--Ventitreesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+                    Quant è grande la Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="headingTwentyThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La Wrap 400 plus ha un <strong>altezza di 1.8m</strong>,
+                    una <strong>larghezza di 0.72m</strong> e una
+                    <strong>profondità di 2.5m</strong>
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventiquattresima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyFour">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyFour" aria-expanded="false"
-										aria-controls="collapseTwentyFour">
-										Quanto pesa la Wrap 400 Plus?
-									</button>
-								</h2>
-								<div id="collapseTwentyFour" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyFour" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Il peso si aggira tra i <strong>500-700 kg</strong>
-									</div>
-								</div>
-							</div>
+              <!--Ventiquattresima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+                    Quanto pesa la Wrap 400 Plus?
+                  </button>
+                </h2>
+                <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Il peso si aggira tra i <strong>500-700 kg</strong>
+                  </div>
+                </div>
+              </div>
 
-							<!--Venticinquesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyFive">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyFive" aria-expanded="false"
-										aria-controls="collapseTwentyFive">
-										Qual è la durata della vita stimata del macchinario?
-									</button>
-								</h2>
-								<div id="collapseTwentyFive" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyFive" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Varia in base all'uso, ma <strong>con una corretta
-											manutenzione</strong>, può avere una vita utile di diversi anni, anche
-										<strong>oltre 10 anni</strong>.
-									</div>
-								</div>
-							</div>
+              <!--Venticinquesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+                    Qual è la durata della vita stimata del macchinario?
+                  </button>
+                </h2>
+                <div id="collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="headingTwentyFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Varia in base all'uso, ma
+                    <strong>con una corretta manutenzione</strong>, può avere
+                    una vita utile di diversi anni, anche
+                    <strong>oltre 10 anni</strong>.
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventiseiesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentySix">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentySix" aria-expanded="false"
-										aria-controls="collapseTwentySix">
-										Posso pulire facilmente il macchinario dopo l'uso?
-									</button>
-								</h2>
-								<div id="collapseTwentySix" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentySix" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Il macchinario è <strong>progettato per facilitare la
-											pulizia</strong>, grazie soprattutto alle <strong>superfici
-											accessibili</strong> e i materiali utilizzati, che permettono una pulizia
-										efficace dopo l'uso, <strong>riducendo il rischio di contaminazione</strong>
-									</div>
-								</div>
-							</div>
+              <!--Ventiseiesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentySix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentySix" aria-expanded="false" aria-controls="collapseTwentySix">
+                    Posso pulire facilmente il macchinario dopo l'uso?
+                  </button>
+                </h2>
+                <div id="collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="headingTwentySix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Il macchinario è
+                    <strong>progettato per facilitare la pulizia</strong>,
+                    grazie soprattutto alle
+                    <strong>superfici accessibili</strong> e i materiali
+                    utilizzati, che permettono una pulizia efficace dopo
+                    l'uso,
+                    <strong>riducendo il rischio di contaminazione</strong>
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventisettesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentySeven">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentySeven" aria-expanded="false"
-										aria-controls="collapseTwentySeven">
-										Il macchinario è conforme alle normative locali e internazionali sulla sicurezza
-										alimentare?
-									</button>
-								</h2>
-								<div id="collapseTwentySeven" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentySeven" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Il macchinario <strong>è progettato per essere
-											conforme</strong> alle normative locali e internazionali sulla sicurezza
-										alimentare,<strong> garantendo standard elevati di igiene e sicurezza</strong>.
-									</div>
-								</div>
-							</div>
+              <!--Ventisettesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentySeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven">
+                    Il macchinario è conforme alle normative locali e
+                    internazionali sulla sicurezza alimentare?
+                  </button>
+                </h2>
+                <div id="collapseTwentySeven" class="accordion-collapse collapse" aria-labelledby="headingTwentySeven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Il macchinario
+                    <strong>è progettato per essere conforme</strong> alle
+                    normative locali e internazionali sulla sicurezza
+                    alimentare,<strong>
+                      garantendo standard elevati di igiene e
+                      sicurezza</strong>.
+                  </div>
+                </div>
+              </div>
 
-							<!--Ventottesima domanda-->
-							<div class="accordion-item d-none">
-								<h2 class="accordion-header" id="headingTwentyEight">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseTwentyEight" aria-expanded="false"
-										aria-controls="collapseTwentyEight">
-										È adatto all'uso in ambienti a temperatura controllata o richiede specifiche
-										condizioni di lavoro?
-									</button>
-								</h2>
-								<div id="collapseTwentyEight" class="accordion-collapse collapse"
-									aria-labelledby="headingTwentyEight" data-bs-parent="#accordionExample">
-									<div class="accordion-body">La <strong>temperatura</strong> ambiente
-										<strong>ottimale</strong> è tra i <strong>20/25°C</strong>, con un massimo di
-										32°C.
+              <!--Ventottesima domanda-->
+              <div class="accordion-item d-none">
+                <h2 class="accordion-header" id="headingTwentyEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwentyEight" aria-expanded="false" aria-controls="collapseTwentyEight">
+                    È adatto all'uso in ambienti a temperatura controllata o
+                    richiede specifiche condizioni di lavoro?
+                  </button>
+                </h2>
+                <div id="collapseTwentyEight" class="accordion-collapse collapse" aria-labelledby="headingTwentyEight"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La <strong>temperatura</strong> ambiente
+                    <strong>ottimale</strong> è tra i
+                    <strong>20/25°C</strong>, con un massimo di 32°C.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Mostra altre domande-->
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <button class="btn btn-outline-primary btn-lg" id="showMoreFAQ"> Mostra altre domande </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-									</div>
-								</div>
-							</div>
+    <!-- Contattaci -->
+    <section id="contattaci">
+      <div class="container-fluid px-4 py-5 d-flex flex-column justify-content-center align-items-center bg-white">
+        <h2>Contattaci</h2>
+        <fieldset class="container mt-3">
+          <form id="contact-form" class="needs-validation row g-3" action="https://it.wikipedia.org/wiki/Hello_world"
+            method="post" target="_blank" novalidate>
+            <div class="col-12 col-md-6">
+              <!-- NOME -->
+              <div class="mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control custom-input" id="inputNome" name="nome" value=""
+                    placeholder="nome" minlength="3" maxlength="50" aria-label="input per il nome" required />
+                  <label for="inputNome">Nome <i class="bi bi-person"></i></label>
+                </div>
+              </div>
 
-						</div>
-						<!--Mostra altre domande-->
-						<div class="col-12 d-flex justify-content-center align-items-center">
-							<button class="btn btn-outline-primary btn-lg" id="showMoreFAQ">Mostra altre
-								domande</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+              <!-- COGNOME -->
+              <div class="mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control custom-input" id="inputCognome" name="cognome" value=""
+                    minlength="3" maxlength="50" placeholder="Cognome" aria-label="input per il cognome" required />
+                  <label for="inputCognome">Cognome <i class="bi bi-person"></i></label>
+                </div>
+              </div>
 
-		<!-- Contattaci -->
-		<section id="contattaci">
-			<div
-				class="container-fluid px-4 py-5 d-flex flex-column justify-content-center align-items-center bg-white">
-				<h2>Contattaci</h2>
-				<fieldset class="container mt-3">
-					<form id="contact-form" class="needs-validation row g-3"
-						action="https://it.wikipedia.org/wiki/Hello_world" method="post" target="_blank" novalidate>
+              <!-- EMAIL -->
+              <div class="mb-3">
+                <div class="form-floating">
+                  <input type="email" class="form-control form-control-lg custom-input" id="inputEmail" name="email"
+                    placeholder="e.g. nome@esempio.com" autocomplete="email" aria-label="input per l'email" required />
+                  <label for="inputEmail">Email <i class="bi bi-envelope-open ms-2"></i></label>
+                </div>
+              </div>
 
-						<div class="col-12 col-md-6">
+              <!-- TELEFONO -->
+              <div class="mb-5">
+                <div class="row">
+                  <!-- CODICE NAZIONE -->
+                  <div class="col-3">
+                    <select class="form-select custom-input h-100" id="inputCodiceNazione" name="codiceNazione"
+                      aria-label="input per selezionare codice nazione" required>
+                      <option value="" selected disabled>Prefisso</option>
+                      <option value="+39">Italia (+39)</option>
+                      <option value="+1">USA (+1)</option>
+                      <option value="+44">UK (+44)</option>
+                      <option value="+33">France (+33)</option>
+                      <option value="+34">Spain (+34)</option>
+                    </select>
+                  </div>
 
-							<!-- NOME -->
-							<div class="mb-3">
-								<div class="form-floating">
-									<input type="text" class="form-control custom-input" id="inputNome" name="nome"
-										value="" placeholder="nome" minlength="3" maxlength="50"
-										aria-label="input per il nome" required>
-									<label for="inputNome">Nome <i class="bi bi-person"></i></label>
-								</div>
-							</div>
+                  <!-- NUMERO DI TELEFONO -->
+                  <div class="col-9">
+                    <div class="form-floating">
+                      <input type="tel" class="form-control form-control-lg custom-input" id="inputTelefono"
+                        name="phone" placeholder="e.g. 1234567890" pattern="^\+?[0-9]{10,15}$"
+                        aria-describedby="aiutoInserimentoTel" aria-label="input per telefono" required />
+                      <label for="inputTelefono">Numero di telefono
+                        <i class="bi bi-telephone ms-2"></i></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-text" id="aiutoInserimentoTel">
+                  Inserisci il tuo numero di telefono includendo il codice
+                  nazione.
+                </div>
+              </div>
+            </div>
 
-							<!-- COGNOME -->
-							<div class="mb-3">
-								<div class="form-floating">
-									<input type="text" class="form-control custom-input" id="inputCognome"
-										name="cognome" value="" minlength="3" maxlength="50" placeholder="Cognome"
-										aria-label="input per il cognome" required>
-									<label for="inputCognome">Cognome <i class="bi bi-person"></i></label>
-								</div>
-							</div>
+            <div class="col-12 col-md-6">
+              <!-- RICHIESTA -->
+              <div class="mb-4">
+                <div class="form-floating">
+                  <textarea class="form-control custom-input" id="textAreaRichiesta" name="richiestaIniziale" rows="5"
+                    maxlength="500" placeholder="scrivi qui..." aria-describedby="aiutoInserimentoRichiesta"
+                    aria-label="textarea per inserire una richiesta iniziale" required></textarea>
+                  <label for="textAreaRichiesta" class="form-label">Scrivi la tua richiesta!</label>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                  <div class="form-text" id="aiutoInserimentoRichiesta">
+                    Indica brevemente il motivo per cui vorresti
+                    contattarci<br />
+                    Puoi includere qualsiasi informazione utile per aiutarci a
+                    capire la tua richiesta.
+                  </div>
+                  <!-- COUNTER -->
+                  <p class="counterChar"></p>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="btn btn-outline-danger btn-lg" id="buttonPrenotazione">
+                  Prenota una visita!
+                </div>
+              </div>
 
-							<!-- EMAIL -->
-							<div class="mb-3">
-								<div class="form-floating">
-									<input type="email" class="form-control form-control-lg custom-input"
-										id="inputEmail" name="email" placeholder="e.g. nome@esempio.com"
-										autocomplete="email" aria-label="input per l'email" required>
-									<label for="inputEmail">Email <i class="bi bi-envelope-open ms-2"></i></label>
-								</div>
-							</div>
+              <!-- VISITA -->
+              <div class="row dontShow" id="sezionePrenotazione">
+                <!-- DATA -->
+                <div class="col-8 col-md-6 col-lg-5">
+                  <label for="inputDataVisita" class="form-label">Data della visita</label>
+                  <input type="date" class="form-control form-control-lg custom-input" id="inputDataVisita"
+                    name="dataVisita" aria-label="input per la data della visita" />
+                </div>
 
-							<!-- TELEFONO -->
-							<div class="mb-5">
-								<div class="row">
-									<!-- CODICE NAZIONE -->
-									<div class="col-3">
-										<select class="form-select custom-input h-100" id="inputCodiceNazione"
-											name="codiceNazione" aria-label="input per selezionare codice nazione"
-											required>
-											<option value="" selected disabled>Prefisso</option>
-											<option value="+39">Italia (+39)</option>
-											<option value="+1">USA (+1)</option>
-											<option value="+44">UK (+44)</option>
-											<option value="+33">France (+33)</option>
-											<option value="+34">Spain (+34)</option>
-										</select>
-									</div>
+                <!-- ORARIO -->
+                <div class="col-4 col-md-6 col-lg-4">
+                  <label for="inputOrarioVisita" class="form-label">Orario</label>
+                  <input type="time" class="form-control form-control-lg custom-input" id="inputOrarioVisita"
+                    name="orarioVisita" aria-label="input per l'orario della visita" />
+                </div>
 
-									<!-- NUMERO DI TELEFONO -->
-									<div class="col-9">
-										<div class="form-floating">
-											<input type="tel" class="form-control form-control-lg custom-input"
-												id="inputTelefono" name="phone" placeholder="e.g. 1234567890"
-												pattern="^\+?[0-9]{10,15}$" aria-describedby="aiutoInserimentoTel"
-												aria-label="input per telefono" required>
-											<label for="inputTelefono">Numero di telefono <i
-													class="bi bi-telephone ms-2"></i></label>
-										</div>
-									</div>
-								</div>
-								<div class="form-text" id="aiutoInserimentoTel">
-									Inserisci il tuo numero di telefono includendo il codice nazione.
-								</div>
-							</div>
-						</div>
+                <div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-end">
+                  <div class="btn btn-secondary" id="buttonAnnullaPrenotazione">
+                    Annulla prenotazione
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<div class="col-12 col-md-6">
+            <!-- TERMINI E CONDIZIONI -->
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required />
+                <label class="form-check-label" for="flexCheckDefault">Accetto i termini e condizioni</label>
+              </div>
+            </div>
 
-							<!-- RICHIESTA -->
-							<div class="mb-4">
-								<div class="form-floating">
-									<textarea class="form-control custom-input" id="textAreaRichiesta"
-										name="richiestaIniziale" rows="5" maxLength="500" placeholder="scrivi qui..."
-										aria-describedby="aiutoInserimentoRichiesta"
-										aria-label="textarea per inserire una richiesta iniziale" required></textarea>
-									<label for="textAreaRichiesta" class="form-label">Scrivi la tua richiesta!</label>
-								</div>
-								<div class="col-12 d-flex justify-content-between align-items-center">
-									<div class="form-text" id="aiutoInserimentoRichiesta">
-										Indica brevemente il motivo per cui vorresti contattarci<br />
-										Puoi includere qualsiasi informazione utile per aiutarci a capire la tua
-										richiesta.
-									</div>
-									<!-- COUNTER -->
-									<p class="counterChar"></p>
-								</div>
-							</div>
-							<div class="col-12 d-flex justify-content-center align-items-center">
-								<div class="btn btn-outline-danger btn-lg" id="buttonPrenotazione">Prenota una visita!
-								</div>
-							</div>
+            <!-- SUBMIT -->
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <button type="submit" class="btn btn-primary btn-lg g-recaptcha px-5 py-3"
+                data-sitekey="6LffcU0qAAAAACSV3wQKdZAg4xysZDQ0TqJh38Yr" data-callback="onSubmit" data-action="submit"
+                name="submit">
+                Invia
+              </button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </section>
+  </main>
 
-							<!-- VISITA -->
-							<div class="row dontShow" id="sezionePrenotazione">
-								<!-- DATA -->
-								<div class="col-8 col-md-6 col-lg-5">
-									<label for="inputDataVisita" class="form-label">Data della visita</label>
-									<input type="date" class="form-control form-control-lg custom-input"
-										id="inputDataVisita" name="dataVisita"
-										aria-label="input per la data della visita">
-								</div>
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div
+      class="container-fluid d-flex flex-column row-gap-5 justify-content-evenly align-items-center flex-md-row justify-content-md-around align-items-md-start">
+      <!-- Colonna 1: Google Maps -->
+      <div class="footer-col map-col text-center order-1 order-md-0">
+        <h5>CI TROVI QUI !</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2159490244308!2d7.905320812196701!3d44.69478988454721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b297a5290c0f%3A0x9147fdc41d8203d5!2sSelmi%20Srl!5e0!3m2!1sit!2sit!4v1729584137080!5m2!1sit!2sit"
+          width="100%" height="250" style="width: 280px; border-radius: 20px" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-								<!-- ORARIO -->
-								<div class="col-4 col-md-6 col-lg-4">
-									<label for="inputOrarioVisita" class="form-label">Orario</label>
-									<input type="time" class="form-control form-control-lg custom-input"
-										id="inputOrarioVisita" name="orarioVisita"
-										aria-label="input per l'orario della visita">
-								</div>
+      <!-- Colonna 2: Contatti telefonici -->
+      <div class="order-0 order-md-1">
+        <h5>Selmi Group</h5>
+        <p>Via Langhe 25, 12042 Pollenzo (CN)</p>
+        <p>P.iva: 02668130046</p>
+        <h5>I CONTATTI TELEFONICI</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Tel: +39 0172 479 273</a></li>
+          <li><a href="#" class="text-light">Tel: +39 0172 479 275</a></li>
+          <li><a href="#" class="text-light">Fax: +39 0172 477 814</a></li>
+        </ul>
+      </div>
 
-								<div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-end">
-									<div class="btn btn-secondary" id="buttonAnnullaPrenotazione">Annulla prenotazione
-									</div>
-								</div>
-							</div>
-						</div>
+      <!-- Colonna 3: Privacy Policy, Email e Social Media -->
+      <div class="text-md-end order-2">
+        <div>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html"
+                class="text-light">Linee di Produzione</a>
+            </li>
+            <li>
+              <a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf"
+                class="text-light">Informativa Trattamento Dati</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5>LE NOSTRE EMAIL</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="mailto:info@selmi-group.it" class="text-light">info@selmi-group.it</a>
+            </li>
+            <li>
+              <a href="mailto:technicalservice@selmi-group.it" class="text-light">technicalservice@selmi-group.it</a>
+            </li>
+            <li>
+              <a href="mailto:trainingcentre@selmi-group.it" class="text-light">trainingcentre@selmi-group.it</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5">
+          <ul class="list-unstyled d-flex gap-5">
+            <li>
+              <a href="#" class="text-light"><i class="bi bi-facebook h3"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-light"><i class="bi bi-instagram h3"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-light"><i class="bi bi-youtube h3"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-						<!-- TERMINI E CONDIZIONI -->
-						<div class="col-12 d-flex justify-content-center align-items-center">
-							<div class="form-check me-3">
-								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-								<label class="form-check-label" for="flexCheckDefault">Accetto i termini e
-									condizioni</label>
-							</div>
-						</div>
+    <!-- Copyright -->
+    <div class="text-center mt-5">
+      <p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
 
-						<!-- SUBMIT -->
-						<div class="col-12 d-flex justify-content-center align-items-center">
-							<button type="submit" class="btn btn-primary btn-lg g-recaptcha px-5 py-3"
-								data-sitekey="6LffcU0qAAAAACSV3wQKdZAg4xysZDQ0TqJh38Yr" data-callback='onSubmit'
-								data-action='submit' name="submit">Invia</button>
-						</div>
-					</form>
-				</fieldset>
-			</div>
-		</section>
-	</main>
-
-	<!-- Footer -->
-	<footer class="bg-dark text-light py-4">
-		<div class="container-fluid d-flex justify-content-between align-items-start flex-wrap px-5">
-
-			<!-- Colonna 1: Google Maps -->
-			<div class="footer-col map-col text-center me-auto">
-				<h5>CI TROVI QUI !</h5>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2159490244308!2d7.905320812196701!3d44.69478988454721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b297a5290c0f%3A0x9147fdc41d8203d5!2sSelmi%20Srl!5e0!3m2!1sit!2sit!4v1729584137080!5m2!1sit!2sit"
-					width="100%" height="250" style="width: 400px; border-radius:20px;" allowfullscreen=""
-					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-
-			<!-- Colonna 2: Contatti telefonici -->
-			<div class="footer-col">
-				<h5>Selmi Group</h5>
-				<p>Via Langhe 25, 12042 Pollenzo (CN)</p>
-				<p>P.iva: 02668130046</p>
-				<h5>I CONTATTI TELEFONICI</h5>
-				<ul class="list-unstyled">
-					<li><a href="#" class="text-light">Tel: +39 0172 479 273</a></li>
-					<li><a href="#" class="text-light">Tel: +39 0172 479 275</a></li>
-					<li><a href="#" class="text-light">Fax: +39 0172 477 814</a></li>
-				</ul>
-			</div>
-
-			<!-- Colonna 3: Privacy Policy, Email e Social Media -->
-			<div class="footer-col text-md-end ms-auto">
-				<div>
-					<ul class="list-unstyled">
-						<li><a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy
-								Policy</a>
-						</li>
-						<li><a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html"
-								class="text-light">Linee di Produzione</a></li>
-						<li><a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf"
-								class="text-light">Informativa Trattamento Dati</a></li>
-					</ul>
-				</div>
-				<div>
-					<h5>LE NOSTRE EMAIL</h5>
-					<ul class="list-unstyled">
-						<li><a href="mailto:info@selmi-group.it" class="text-light">info@selmi-group.it</a></li>
-						<li><a href="mailto:technicalservice@selmi-group.it"
-								class="text-light">technicalservice@selmi-group.it</a></li>
-						<li><a href="mailto:trainingcentre@selmi-group.it"
-								class="text-light">trainingcentre@selmi-group.it</a></li>
-					</ul>
-				</div>
-				<div class="social-media mt-5">
-					<ul class="list-unstyled d-flex gap-5">
-						<li><a href="#" class="text-light"><i class="bi bi-facebook h3"></i></a></li>
-						<li><a href="#" class="text-light"><i class="bi bi-instagram h3"></i></a></li>
-						<li><a href="#" class="text-light"><i class="bi bi-youtube h3"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!-- Copyright -->
-		<div class="text-center mt-5">
-			<p class="mb-0">&copy; 2024 Selmi Group. Tutti i diritti riservati.</p>
-		</div>
-	</footer>
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
-	<script src="./scripts/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
 </body>
-
 </html>

@@ -349,22 +349,6 @@ div.dontShow {
 	label {
 		font-size: 15px;
 	}
-
-
-	/* footer */
-	.container {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.footer-col {
-		margin-bottom: 20px;
-	}
-
-	.map-col {
-		order: 1;
-		/* La mappa viene centrata sotto le colonne */
-	}
 }
 
 iframe {
