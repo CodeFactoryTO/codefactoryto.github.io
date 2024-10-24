@@ -7,167 +7,156 @@
 
 
 <!-- external CSS file style form -->
-<link rel="stylesheet" href="../styles/form.css">
+<link rel="stylesheet" href="../styles/style.css">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-
-
+<!-- Contattaci -->
 <section id="contattaci">
-    <div class="container-fluid vh-100 px-4 py-5 bg-secondary">
-        <div class="row">
-            <div class="col-12">
-                <h2>Contattaci</h2>
+    <div class="container-fluid px-4 py-5 d-flex flex-column justify-content-center align-items-center bg-white">
+        <h2>Contattaci</h2>
+        <fieldset class="container mt-3">
+            <form id="contact-form" class="needs-validation row g-3" action="https://it.wikipedia.org/wiki/Hello_world"
+                method="post" target="_blank" novalidate>
 
+                <div class="col-12 col-md-6">
 
-
-                <fieldset class="mt-3 ms-5">
-
-                    <!-- the form is using a system of row and column (to support + input if you want to set multiple fields on a wor,
-                    or if one occupies all the space of the row)
-                    trought the class: `.needs-validation`, you can take advantage of personalized validation and dynamic error messages
-                    from BOOTSTRAP whit a script (on the bottom of the page!) 
-                    ToDo use the id: `#demoform` used for the captcha -->
-                    <form id="demo-form" class="needs-validation row g-3"
-                        action="https://it.wikipedia.org/wiki/Hello_world" method="post" target="_blank" novalidate>
-
-
-                        <!--! inputs: same row using (row + col): NAME(1 input) + SURNAME(2 input) using form-floating fields -->
-                        <!-- SONO GLI INUCI 2 INPUTS RESPONSIVE IN BASE ALLA VIEWPORT DISPONIBILE -->
-                        <!-- floating input NAME (take 6 column of 12), the name input has the AUTOFOCUS when the page is loaded -->
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control custom-input" id="inputNome" name="nome" value=""
-                                    placeholder="nome" minlength="3" maxlength="50" aria-label="input per il nome"
-                                    required autofocus>
-                                <label for="inputNome">Nome<i class="bi bi-person"></i></label>
-                            </div>
+                    <!-- NOME -->
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control custom-input" id="inputNome" name="nome" value=""
+                                placeholder="nome" minlength="3" maxlength="50" aria-label="input per il nome" required>
+                            <label for="inputNome">Nome <i class="bi bi-person"></i></label>
                         </div>
+                    </div>
 
-                        <!-- floating input SURNAME (take 6 column of 12) -->
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control custom-input" id="inputCognome" name="cognome"
-                                    value="" minlength="3" maxlength="50" placeholder="Cognome"
-                                    aria-label="input per il cognome" required>
-                                <label for="inputCognome">Cognome<i class="bi bi-person"></i></label>
-                            </div>
+                    <!-- COGNOME -->
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control custom-input" id="inputCognome" name="cognome"
+                                value="" minlength="3" maxlength="50" placeholder="Cognome"
+                                aria-label="input per il cognome" required>
+                            <label for="inputCognome">Cognome <i class="bi bi-person"></i></label>
                         </div>
+                    </div>
 
-
-                        <!--! inputs email take all the row! (12 col) -->
-                        <!-- input email in which a check is carried out via the regex pattern, to confirm whether the email is valid -->
-                        <div class="col-12 mb-3">
-                            <label for="inputEmail" class="form-label">Email<i
-                                    class="bi bi-envelope-open ms-2"></i></label>
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+                        <div class="form-floating">
                             <input type="email" class="form-control form-control-lg custom-input" id="inputEmail"
                                 name="email" placeholder="e.g. nome@esempio.com" autocomplete="email"
                                 aria-label="input per l'email" required>
+                            <label for="inputEmail">Email <i class="bi bi-envelope-open ms-2"></i></label>
                         </div>
+                    </div>
 
+                    <!-- TELEFONO -->
+                    <div class="mb-5">
+                        <div class="row">
+                            <!-- CODICE NAZIONE -->
+                            <div class="col-3">
+                                <select class="form-select custom-input h-100" id="inputCodiceNazione"
+                                    name="codiceNazione" aria-label="input per selezionare codice nazione" required>
+                                    <option value="" selected disabled>Prefisso</option>
+                                    <option value="+39">Italia (+39)</option>
+                                    <option value="+1">USA (+1)</option>
+                                    <option value="+44">UK (+44)</option>
+                                    <option value="+33">France (+33)</option>
+                                    <option value="+34">Spain (+34)</option>
+                                </select>
+                            </div>
 
-                        <!--! input number collects the user's phone number, ensuring that:
-                         1. a country code is selected (required)
-                         2. the phone number input matches a specific pattern (optional '+' followed by 1 to 15 digits)
-                         3. the phone number must be entered in a valid format including the country code -->
-
-                        <!-- row composed by label + select country code + field tel + form-text to help the user -->
-                        <div class="mb-5">
-
-                            <label for="inputTelefono" class="form-label">Numero di telefono<i
-                                    class="bi bi-telephone ms-2"></i></label>
-
-                            <div class="row">
-                                <!-- select country code -->
-                                <div class="col-3">
-                                    <select class="form-select custom-input" id="inputCodiceNazione"
-                                        name="codiceNazione" aria-label="input per selezionare codice nazione" required>
-                                        <option value="" selected disabled>Seleziona Prefisso</option>
-                                        <option value="+39">Italy (+39)</option>
-                                        <option value="+1">USA (+1)</option>
-                                        <option value="+44">UK (+44)</option>
-                                        <option value="+33">France (+33)</option>
-                                        <option value="+34">Spain (+34)</option>
-                                    </select>
-                                </div>
-                                <!-- input field tel number -->
-                                <div class="col-9">
+                            <!-- NUMERO DI TELEFONO -->
+                            <div class="col-9">
+                                <div class="form-floating">
                                     <input type="tel" class="form-control form-control-lg custom-input"
                                         id="inputTelefono" name="phone" placeholder="e.g. 1234567890"
                                         pattern="^\+?[0-9]{10,15}$" aria-describedby="aiutoInserimentoTel"
                                         aria-label="input per telefono" required>
+                                    <label for="inputTelefono">Numero di telefono <i
+                                            class="bi bi-telephone ms-2"></i></label>
                                 </div>
                             </div>
-                            <!-- testo regole per inserimento del numero di telefono -->
-                            <div class="form-text" id="aiutoInserimentoTel">
-                                Perfavore inserisci il tuo numero di telefono, includendo il codice nazione.
-                            </div>
-
                         </div>
+                        <div class="form-text" id="aiutoInserimentoTel">
+                            Inserisci il tuo numero di telefono includendo il codice nazione.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-12 col-md-6">
 
-                        <!--! input textarea usato per mandare una prima richiesta di contatto al destinatorio -->
-                        <div class="col-12 mb-5">
-                            <label for="textAreaRichiesta" class="form-label">Scrivi la tua richiesta!</label>
+                    <!-- RICHIESTA -->
+                    <div class="mb-4">
+                        <div class="form-floating">
                             <textarea class="form-control custom-input" id="textAreaRichiesta" name="richiestaIniziale"
                                 rows="5" maxLength="500" placeholder="scrivi qui..."
                                 aria-describedby="aiutoInserimentoRichiesta"
                                 aria-label="textarea per inserire una richiesta iniziale" required></textarea>
-                            <!-- testo di aiuto per indicare di usare il textarea per una richiesta inziale da mandare -->
-                            <div class="form-text" id="aiutoInserimentoRichiesta">
-                                Perfavore descrivi brevemente il motivo iniziale del tuo contatto. Puoi includere
-                                qualsiasi
-                                informazione
-                                utile per aiutarci a capire la tua richiesta.
-                            </div>
-                            <!-- couter dinamico che cambia in base ai caratteri presenti nel textarea -->
-                            <p class="counterChar"></p>
+                            <label for="textAreaRichiesta" class="form-label">Scrivi la tua richiesta!</label>
                         </div>
+                        <div class="form-text" id="aiutoInserimentoRichiesta">
+                            Indica brevemente il motivo per cui vorresti contattarci<br />
+                            Puoi includere qualsiasi informazione utile per aiutarci a capire la tua richiesta.
+                        </div>
+                        <!-- COUNTER -->
+                        <p class="counterChar"></p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="btn btn-outline-danger btn-lg" id="buttonPrenotazione">Prenota una visita!
+                        </div>
+                    </div>
 
-
-
-                        <!--! input date e orario per prenotare una visita -->
-                        <!--? inizialmente -> DISPLAY: NONE   |   con prenotazione -> DISPLAY: 
-                        nel momento in cui si cliccka prenotazione i campi utitli per la prenotazione verranno showati all'utente -->
-                        <div class="col-12 dontShow" id="sezionePrenotazione">
-                            <!-- input per la data -->
-                            <label for="inputDataVisita" class="form-label">Seleziona la data della visita</label>
+                    <!-- VISITA -->
+                    <div class="row dontShow" id="sezionePrenotazione">
+                        <!-- DATA -->
+                        <div class="col-8 col-md-6 col-lg-5">
+                            <label for="inputDataVisita" class="form-label">Data della visita</label>
                             <input type="date" class="form-control form-control-lg custom-input" id="inputDataVisita"
                                 name="dataVisita" aria-label="input per la data della visita">
+                        </div>
 
-                            <!-- input per l'orario -->
-                            <label for="inputOrarioVisita" class="form-label mt-3">Seleziona l'orario della
-                                visita</label>
+                        <!-- ORARIO -->
+                        <div class="col-4 col-md-6 col-lg-4">
+                            <label for="inputOrarioVisita" class="form-label">Orario</label>
                             <input type="time" class="form-control form-control-lg custom-input" id="inputOrarioVisita"
                                 name="orarioVisita" aria-label="input per l'orario della visita">
                         </div>
 
-
-                        <!--! button to submit the data of the fields added a classes which change the size and the style of the button -->
-                        <!-- riga con i button:
-                        (1 button invia solamente la richiesta di contatto) 
-                        (2 button puoi anche aggiungere di effettuare una prenotazione con selmi) -->
-                        <div class="mt-5 mb-5 col-6">
-                            <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
-                                data-sitekey="6LffcU0qAAAAACSV3wQKdZAg4xysZDQ0TqJH48Yr" data-callback='onSubmit'
-                                data-action='submit' name="submit">Invia</button>
+                        <div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-end">
+                            <div class="btn btn-secondary" id="buttonAnnullaPrenotazione">Annulla prenotazione
+                            </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="mt-5 mb-5 col-6">
-                            <div class="btn btn-danger btn-lg" id="buttonPrenotazione">prenota una visita!</div>
-                        </div>
+                <div class="col-12 d-flex justify-content-end align-items-center">
+                    <!-- TERMINI E CONDIZIONI -->
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">Accetto i termini e
+                            condizioni</label>
+                    </div>
 
-
-                    </form>
-
-                </fieldset>
-
-
-
-            </div>
-        </div>
+                    <!-- SUBMIT -->
+                    <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
+                        data-sitekey="6LffcU0qAAAAACSV3wQKdZAg4xysZDQ0TqJh38Yr" data-callback='onSubmit'
+                        data-action='submit' name="submit">Invia</button>
+                </div>
+            </form>
+        </fieldset>
     </div>
 </section>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 <!-- JS file whit personalized validation and dynamic error messages + TODO CAPTCHA scripts -->
 <script src="../scripts/script.js" defer></script>
