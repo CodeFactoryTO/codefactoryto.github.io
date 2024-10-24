@@ -3,20 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 
-	 @type: Product    per la descrizione del nostro prodotto (name, image, description)
-
-	 - specifiche tecniche -> una serie di oggetti che specificano le caratteristiche del prodotto (peso, altezza, materiali...)
-
-	 - brand -> per descrivere l'azienda che produce il prodotto trattato
-	 	- organization -> descrivere l'azienda o l'organizzazione dietro un sito web o un prodotto
-	 	- contact point -> per fornire dettagli sui punti di contatto per l'azienda o l'organizzazione
-	 	- address -> per fornire dettagli sull'indirizzo fisico di un'organizzazione
-	 		- geo coordinates -> le coordinate geografiche del luogo specifico di dove viene svolta l'attività
-	 		- has map -> link della mappa con la posizione dell'attività
-	 - offers -> 
-	 - offers -> usato per descrivere le offerte commerciali relative a un prodotto 
-	 -->
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -366,7 +352,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <!-- custom css -->
+  <!-- Custom css -->
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
@@ -392,16 +378,22 @@
         <li class="nav-item">
           <a class="nav-link" href="./#scheda-tecnica">SCHEDA TECNICA</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./#FAQ">FAQ</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="./#FAQ">FAQ</a>
+        </li>
         <li class="nav-item d-md-none">
           <a class="nav-link" href="./#contattaci">CONTATTACI</a>
         </li>
       </ul>
     </div>
-    <a class="btn btn-light text-dark ms-3 rounded-pill fw-bold" href="#contattaci" id="navCTA"><i
-        class="bi bi-envelope-at-fill"></i><span> CONTATTACI</span></a>
+    <a class="btn btn-light text-dark ms-3 rounded-pill fw-bold" href="#contattaci" id="navCTA"
+      aria-label="contattaci subito via email!">
+      <i class="bi bi-envelope-at-fill"></i><span>CONTATTACI</span>
+    </a>
     <a class="btn btn-danger text-light ms-3 rounded-pill fw-bold" href="tel:1234567890" id="callNow"
-      aria-label="Chiama ora"><i class="bi bi-telephone-fill"></i></a>
+      aria-label="Chiama ora">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
   </nav>
 
   <!-- Main -->
@@ -409,6 +401,8 @@
     <!-- Hero -->
     <section id="hero">
       <div class="vh-100 text-light overflow-d-none">
+
+        <!-- video della Hero -->
         <video id="hero-video" class="h-100 w-100 object-fit-cover position-fixed top-0 start-0 z-n1"
           playsinline="playsinline" muted="muted" loop="loop">
           <source src="./assets/video/wrap-400-plus-macchina-confezionamento-flow-pack-selmi.mp4" type="video/mp4" />
@@ -1307,7 +1301,7 @@
             </div>
             <!--Mostra altre domande-->
             <div class="col-12 d-flex justify-content-center align-items-center">
-              <button class="btn btn-outline-primary btn-lg" id="showMoreFAQ"> Mostra altre domande </button>
+              <button class="btn btn-primary btn-lg" id="showMoreFAQ">Mostra altre domande</button>
             </div>
           </div>
         </div>
@@ -1445,9 +1439,7 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <button type="submit" class="btn btn-primary btn-lg g-recaptcha px-5 py-3"
                 data-sitekey="6LffcU0qAAAAACSV3wQKdZAg4xysZDQ0TqJh38Yr" data-callback="onSubmit" data-action="submit"
-                name="submit">
-                Invia
-              </button>
+                name="submit">Invia</button>
             </div>
           </form>
         </fieldset>
@@ -1461,23 +1453,24 @@
       class="container-fluid d-flex flex-column row-gap-5 justify-content-evenly align-items-center flex-md-row justify-content-md-around align-items-md-start">
       <!-- Colonna 1: Google Maps -->
       <div class="footer-col map-col text-center order-1 order-md-0">
-        <h5>CI TROVI QUI !</h5>
+        <h3>CI TROVI QUI !</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2159490244308!2d7.905320812196701!3d44.69478988454721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b297a5290c0f%3A0x9147fdc41d8203d5!2sSelmi%20Srl!5e0!3m2!1sit!2sit!4v1729584137080!5m2!1sit!2sit"
-          width="100%" height="250" style="width: 280px; border-radius: 20px" allowfullscreen="" loading="lazy"
+          title="Mappa con la posizione della nostra sede" width="300" height="250"
+          style="width: 300px; border-radius: 20px" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <!-- Colonna 2: Contatti telefonici -->
       <div class="order-0 order-md-1">
-        <h5>Selmi Group</h5>
+        <h4>Selmi Group</h4>
         <p>Via Langhe 25, 12042 Pollenzo (CN)</p>
         <p>P.iva: 02668130046</p>
         <h5>I CONTATTI TELEFONICI</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-light">Tel: +39 0172 479 273</a></li>
-          <li><a href="#" class="text-light">Tel: +39 0172 479 275</a></li>
-          <li><a href="#" class="text-light">Fax: +39 0172 477 814</a></li>
+          <li><a href="#" class="text-light" aria-label="contatta via telefono selmi">Tel: +39 0172 479 273</a></li>
+          <li><a href="#" class="text-light" aria-label="contatta via telefono selmi">Tel: +39 0172 479 275</a></li>
+          <li><a href="#" class="text-light" aria-label="contatta via telefono selmi">Fax: +39 0172 477 814</a></li>
         </ul>
       </div>
 
@@ -1486,15 +1479,16 @@
         <div>
           <ul class="list-unstyled">
             <li>
-              <a href="https://www.selmi-group.it/privacy-policy.html" class="text-light">Privacy Policy</a>
+              <a href="https://www.selmi-group.it/privacy-policy.html" class="text-light"
+                aria-label="regolamento per le politiche di privatezza">Privacy Policy</a>
             </li>
             <li>
-              <a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html"
-                class="text-light">Linee di Produzione</a>
+              <a href="https://www.selmi-group.it/linee-produzione-cioccolato-fruttasecca-caffe.html" class="text-light"
+                aria-label="regolamento sulle linee di produzione">Linee di Produzione</a>
             </li>
             <li>
-              <a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf"
-                class="text-light">Informativa Trattamento Dati</a>
+              <a href="https://www.selmi-group.it/pdf/Customer%20Privacy%20Policy%20ITA.pdf" class="text-light"
+                aria-label="informazioni per il trattamento dei dati">Informativa Trattamento Dati</a>
             </li>
           </ul>
         </div>
@@ -1502,26 +1496,32 @@
           <h5>LE NOSTRE EMAIL</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="mailto:info@selmi-group.it" class="text-light">info@selmi-group.it</a>
+              <a href="mailto:info@selmi-group.it" class="text-light"
+                aria-label="email di contatto per informazioni">info@selmi-group.it</a>
             </li>
             <li>
-              <a href="mailto:technicalservice@selmi-group.it" class="text-light">technicalservice@selmi-group.it</a>
+              <a href="mailto:technicalservice@selmi-group.it" class="text-light"
+                aria-label="email di contatto per supporto tecnico">technicalservice@selmi-group.it</a>
             </li>
             <li>
-              <a href="mailto:trainingcentre@selmi-group.it" class="text-light">trainingcentre@selmi-group.it</a>
+              <a href="mailto:trainingcentre@selmi-group.it" class="text-light"
+                aria-label="email di contatto per comunicare con noi">trainingcentre@selmi-group.it</a>
             </li>
           </ul>
         </div>
         <div class="mt-5">
           <ul class="list-unstyled d-flex gap-5">
             <li>
-              <a href="#" class="text-light"><i class="bi bi-facebook h3"></i></a>
+              <a href="https://www.facebook.com/SelmiGroupChocolateMachinery" class="text-light"
+                aria-label="segui selmi su facebook"><i class="bi bi-facebook h3"></i></a>
             </li>
             <li>
-              <a href="#" class="text-light"><i class="bi bi-instagram h3"></i></a>
+              <a href="https://www.instagram.com/selmi_chocolate_machinery/" class="text-light"
+                aria-label="segui selmi su instagram"><i class="bi bi-instagram h3"></i></a>
             </li>
             <li>
-              <a href="#" class="text-light"><i class="bi bi-youtube h3"></i></a>
+              <a href="https://www.youtube.com/user/Selmisrl" class="text-light" aria-label="segui selmi su youtube"><i
+                  class="bi bi-youtube h3"></i></a>
             </li>
           </ul>
         </div>
