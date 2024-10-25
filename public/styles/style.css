@@ -133,6 +133,10 @@ section {
 	max-width: 400px;
 }
 
+#hero p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #hero-more-info {
 	opacity: 0;
 	position: absolute;

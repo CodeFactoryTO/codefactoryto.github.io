@@ -119,7 +119,12 @@ showMoreFAQ.addEventListener("click", () => {
         if (index >= 3)
             item.classList.toggle("d-none");
     });
-    showMoreFAQ.textContent = showMoreFAQ.textContent === "Mostra altre domande" ? "Mostra meno domande" : "Mostra altre domande";
+    if (showMoreFAQ.textContent === "Mostra altre domande") 
+        showMoreFAQ.textContent = "Mostra meno domande";
+    else {
+        showMoreFAQ.textContent = "Mostra altre domande";
+        window.location.href = "#FAQ";
+    }
 });
 
 /**********************
